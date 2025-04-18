@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.component
+package com.soundify.music.ui.component
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.clickable
@@ -9,16 +9,16 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.navigation.NavController
-import com.metrolist.innertube.models.PlaylistItem
-import com.metrolist.innertube.models.WatchEndpoint
-import com.metrolist.music.R
-import com.metrolist.music.db.entities.Album
-import com.metrolist.music.db.entities.Artist
-import com.metrolist.music.db.entities.Playlist
-import com.metrolist.music.ui.menu.AlbumMenu
-import com.metrolist.music.ui.menu.ArtistMenu
-import com.metrolist.music.ui.menu.PlaylistMenu
-import com.metrolist.music.ui.menu.YouTubePlaylistMenu
+import com.soundify.innertube.models.PlaylistItem
+import com.soundify.innertube.models.WatchEndpoint
+import com.soundify.music.R
+import com.soundify.music.db.entities.Album
+import com.soundify.music.db.entities.Artist
+import com.soundify.music.db.entities.Playlist
+import com.soundify.music.ui.menu.AlbumMenu
+import com.soundify.music.ui.menu.ArtistMenu
+import com.soundify.music.ui.menu.PlaylistMenu
+import com.soundify.music.ui.menu.YouTubePlaylistMenu
 import kotlinx.coroutines.CoroutineScope
 
 @Composable
