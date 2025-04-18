@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.component.shimmer
+package com.soundify.music.ui.component.shimmer
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
@@ -15,9 +15,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.unit.dp
-import com.metrolist.music.constants.ListItemHeight
-import com.metrolist.music.constants.ListThumbnailSize
-import com.metrolist.music.constants.ThumbnailCornerRadius
+import com.soundify.music.constants.ListItemHeight
+import com.soundify.music.constants.ListThumbnailSize
+import com.soundify.music.constants.ThumbnailCornerRadius
 
 @Composable
 fun ListItemPlaceHolder(
