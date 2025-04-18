@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.component
+package com.soundify.music.ui.component
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -21,7 +21,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import com.metrolist.music.R
+import com.soundify.music.R
 
 @Composable
 fun NavigationTitle(
