@@ -1,6 +1,6 @@
 <div align="center">
 <img src="https://github.com/mostafaalagamy/Metrolist/blob/main/fastlane/metadata/android/en-US/images/icon.png" width="160" height="160" style="display: block; margin: 0 auto"/>
-<h1>SyncTune</h1>
+<h1>Soundify</h1>
 <p>YouTube Music client for Android</p>
 
 <h1>Screenshots</h1>
