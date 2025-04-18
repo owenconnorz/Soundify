@@ -1,8 +1,8 @@
-package com.metrolist.music.utils.potoken
+package com.soundify.music.utils.potoken
 
 import android.util.Log
 import android.webkit.CookieManager
-import com.metrolist.music.App
+import com.soundify.music.App
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.sync.Mutex
