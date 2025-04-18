@@ -81,7 +81,7 @@ fun AboutScreen(
             verticalAlignment = Alignment.Top,
         ) {
             Text(
-                text = "METROLIST",
+                text = "Soundify",
                 style = MaterialTheme.typography.headlineSmall,
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier.padding(top = 8.dp, bottom = 4.dp),
@@ -149,7 +149,7 @@ fun AboutScreen(
         Spacer(Modifier.height(4.dp))
 
         Text(
-            text = "MO AGAMY",
+            text = "Owen Connor",
             style = MaterialTheme.typography.titleMedium,
             color = MaterialTheme.colorScheme.secondary,
         )
@@ -158,7 +158,7 @@ fun AboutScreen(
 
         Row {
             IconButton(
-                onClick = { uriHandler.openUri("https://github.com/mostafaalagamy/metrolist") },
+                onClick = { uriHandler.openUri("https://github.com/owencoz1998/soundify") },
             ) {
                 Icon(
                     painter = painterResource(R.drawable.github),
