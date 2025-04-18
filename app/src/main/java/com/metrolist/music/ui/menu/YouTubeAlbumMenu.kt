@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.menu
+package com.soundify.music.ui.menu
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -49,22 +49,22 @@ import androidx.media3.exoplayer.offline.Download
 import androidx.media3.exoplayer.offline.DownloadRequest
 import androidx.media3.exoplayer.offline.DownloadService
 import androidx.navigation.NavController
-import com.metrolist.innertube.YouTube
-import com.metrolist.innertube.models.AlbumItem
-import com.metrolist.music.LocalDatabase
-import com.metrolist.music.LocalDownloadUtil
-import com.metrolist.music.LocalPlayerConnection
-import com.metrolist.music.R
-import com.metrolist.music.constants.ListItemHeight
-import com.metrolist.music.constants.ListThumbnailSize
-import com.metrolist.music.db.entities.Song
-import com.metrolist.music.extensions.toMediaItem
-import com.metrolist.music.playback.ExoDownloadService
-import com.metrolist.music.playback.queues.YouTubeAlbumRadio
-import com.metrolist.music.ui.component.ListDialog
-import com.metrolist.music.ui.component.SongListItem
-import com.metrolist.music.ui.component.YouTubeListItem
-import com.metrolist.music.utils.reportException
+import com.soundify.innertube.YouTube
+import com.soundify.innertube.models.AlbumItem
+import com.soundify.music.LocalDatabase
+import com.soundify.music.LocalDownloadUtil
+import com.soundify.music.LocalPlayerConnection
+import com.soundify.music.R
+import com.soundify.music.constants.ListItemHeight
+import com.soundify.music.constants.ListThumbnailSize
+import com.soundify.music.db.entities.Song
+import com.soundify.music.extensions.toMediaItem
+import com.soundify.music.playback.ExoDownloadService
+import com.soundify.music.playback.queues.YouTubeAlbumRadio
+import com.soundify.music.ui.component.ListDialog
+import com.soundify.music.ui.component.SongListItem
+import com.soundify.music.ui.component.YouTubeListItem
+import com.soundify.music.utils.reportException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
