@@ -1,4 +1,4 @@
-package com.metrolist.music.utils
+package com.soundify.music.utils
 
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.Stable
