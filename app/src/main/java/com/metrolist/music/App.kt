@@ -1,4 +1,4 @@
-package com.metrolist.music
+package com.soundify.music
 
 import android.app.Application
 import android.content.Context
@@ -10,14 +10,14 @@ import coil.ImageLoader
 import coil.ImageLoaderFactory
 import coil.disk.DiskCache
 import coil.request.CachePolicy
-import com.metrolist.music.constants.*
-import com.metrolist.music.extensions.*
-import com.metrolist.music.utils.dataStore
+import com.soundify.music.constants.*
+import com.soundify.music.extensions.*
+import com.soundify.music.utils.dataStore
 import com.metrolist.music.utils.get
-import com.metrolist.music.utils.reportException
-import com.metrolist.innertube.YouTube
-import com.metrolist.innertube.models.YouTubeLocale
-import com.metrolist.kugou.KuGou
+import com.soundify.music.utils.reportException
+import com.soundify.innertube.YouTube
+import com.soundify.innertube.models.YouTubeLocale
+import com.soundify.kugou.KuGou
 import dagger.hilt.android.HiltAndroidApp
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
