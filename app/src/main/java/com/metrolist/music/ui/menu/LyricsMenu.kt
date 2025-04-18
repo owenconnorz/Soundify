@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.menu
+package com.soundify.music.ui.menu
 
 import android.app.SearchManager
 import android.content.Intent
@@ -47,14 +47,14 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.metrolist.music.LocalDatabase
-import com.metrolist.music.R
-import com.metrolist.music.db.entities.LyricsEntity
-import com.metrolist.music.models.MediaMetadata
-import com.metrolist.music.ui.component.DefaultDialog
-import com.metrolist.music.ui.component.ListDialog
-import com.metrolist.music.ui.component.TextFieldDialog
-import com.metrolist.music.viewmodels.LyricsMenuViewModel
+import com.soundify.music.LocalDatabase
+import com.soundify.music.R
+import com.soundify.music.db.entities.LyricsEntity
+import com.soundify.music.models.MediaMetadata
+import com.soundify.music.ui.component.DefaultDialog
+import com.soundify.music.ui.component.ListDialog
+import com.soundify.music.ui.component.TextFieldDialog
+import com.soundify.music.viewmodels.LyricsMenuViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
