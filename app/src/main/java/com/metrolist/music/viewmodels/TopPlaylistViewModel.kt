@@ -1,11 +1,11 @@
-package com.metrolist.music.viewmodels
+package com.soundify.music.viewmodels
 
 import android.content.Context
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.metrolist.music.constants.MyTopFilter
-import com.metrolist.music.db.MusicDatabase
+import com.soundify.music.constants.MyTopFilter
+import com.soundify.music.db.MusicDatabase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.ExperimentalCoroutinesApi
