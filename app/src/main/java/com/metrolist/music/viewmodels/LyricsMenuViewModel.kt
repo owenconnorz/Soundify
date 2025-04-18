@@ -1,12 +1,12 @@
-package com.metrolist.music.viewmodels
+package com.soundify.music.viewmodels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.metrolist.music.db.MusicDatabase
-import com.metrolist.music.db.entities.LyricsEntity
-import com.metrolist.music.lyrics.LyricsHelper
-import com.metrolist.music.lyrics.LyricsResult
-import com.metrolist.music.models.MediaMetadata
+import com.soundify.music.db.MusicDatabase
+import com.soundify.music.db.entities.LyricsEntity
+import com.soundify.music.lyrics.LyricsHelper
+import com.soundify.music.lyrics.LyricsResult
+import com.soundify.music.models.MediaMetadata
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
