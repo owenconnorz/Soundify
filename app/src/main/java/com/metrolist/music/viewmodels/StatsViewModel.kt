@@ -1,12 +1,12 @@
-package com.metrolist.music.viewmodels
+package com.soundify.music.viewmodels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.metrolist.innertube.YouTube
-import com.metrolist.music.constants.statToPeriod
-import com.metrolist.music.db.MusicDatabase
-import com.metrolist.music.ui.screens.OptionStats
-import com.metrolist.music.utils.reportException
+import com.soundify.innertube.YouTube
+import com.soundify.music.constants.statToPeriod
+import com.soundify.music.db.MusicDatabase
+import com.soundify.music.ui.screens.OptionStats
+import com.soundify.music.utils.reportException
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableStateFlow
