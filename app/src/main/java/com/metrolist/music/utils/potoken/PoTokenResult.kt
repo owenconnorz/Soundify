@@ -1,4 +1,4 @@
-package com.metrolist.music.utils.potoken
+package com.soundify.music.utils.potoken
 
 class PoTokenResult(
     val playerRequestPoToken: String,
