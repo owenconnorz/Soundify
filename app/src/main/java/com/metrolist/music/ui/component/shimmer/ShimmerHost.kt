@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.component.shimmer
+package com.soundify.music.ui.component.shimmer
 
 import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.RepeatMode
