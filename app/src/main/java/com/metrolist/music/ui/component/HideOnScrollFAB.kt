@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.component
+package com.soundify.music.ui.component
 
 import androidx.annotation.DrawableRes
 import androidx.compose.animation.AnimatedVisibility
@@ -19,8 +19,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.metrolist.music.LocalPlayerAwareWindowInsets
-import com.metrolist.music.ui.utils.isScrollingUp
+import com.soundify.music.LocalPlayerAwareWindowInsets
+import com.soundify.music.ui.utils.isScrollingUp
 
 @Composable
 fun BoxScope.HideOnScrollFAB(
