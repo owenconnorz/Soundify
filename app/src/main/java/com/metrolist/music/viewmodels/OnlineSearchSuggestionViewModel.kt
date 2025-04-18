@@ -1,16 +1,16 @@
-package com.metrolist.music.viewmodels
+package com.soundify.music.viewmodels
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.metrolist.innertube.YouTube
-import com.metrolist.innertube.models.YTItem
-import com.metrolist.innertube.models.filterExplicit
-import com.metrolist.music.constants.HideExplicitKey
-import com.metrolist.music.db.MusicDatabase
-import com.metrolist.music.db.entities.SearchHistory
-import com.metrolist.music.utils.dataStore
-import com.metrolist.music.utils.get
+import com.soundify.innertube.YouTube
+import com.soundify.innertube.models.YTItem
+import com.soundify.innertube.models.filterExplicit
+import com.soundify.music.constants.HideExplicitKey
+import com.soundify.music.db.MusicDatabase
+import com.soundify.music.db.entities.SearchHistory
+import com.soundify.music.utils.dataStore
+import com.soundify.music.utils.get
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.ExperimentalCoroutinesApi
