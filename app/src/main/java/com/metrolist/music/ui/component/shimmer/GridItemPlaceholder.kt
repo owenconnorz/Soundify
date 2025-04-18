@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.component.shimmer
+package com.metrolist.soundify.ui.component.shimmer
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
@@ -15,8 +15,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.unit.dp
-import com.metrolist.music.constants.GridThumbnailHeight
-import com.metrolist.music.constants.ThumbnailCornerRadius
+import com.soundify.music.constants.GridThumbnailHeight
+import com.soundify.music.constants.ThumbnailCornerRadius
 
 @Composable
 fun GridItemPlaceHolder(
