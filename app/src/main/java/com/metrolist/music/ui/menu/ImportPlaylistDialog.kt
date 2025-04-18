@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.menu
+package com.soundify.music.ui.menu
 
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
@@ -12,9 +12,9 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.TextFieldValue
 import com.metrolist.music.LocalDatabase
-import com.metrolist.music.R
-import com.metrolist.music.db.entities.PlaylistEntity
-import com.metrolist.music.ui.component.TextFieldDialog
+import com.soundify.music.R
+import com.soundify.music.db.entities.PlaylistEntity
+import com.soundify.music.ui.component.TextFieldDialog
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.launch
