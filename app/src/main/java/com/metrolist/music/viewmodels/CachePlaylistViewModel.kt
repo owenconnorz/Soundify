@@ -1,16 +1,16 @@
-package com.metrolist.music.viewmodels
+package com.soundify.music.viewmodels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.metrolist.music.db.MusicDatabase
-import com.metrolist.music.db.entities.Song
+import com.soundify.music.db.MusicDatabase
+import com.soundify.music.db.entities.Song
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 import javax.inject.Inject
-import com.metrolist.music.di.PlayerCache
-import com.metrolist.music.di.DownloadCache
+import com.soundify.music.di.PlayerCache
+import com.soundify.music.di.DownloadCache
 import androidx.media3.datasource.cache.SimpleCache
 import java.time.LocalDateTime
 
