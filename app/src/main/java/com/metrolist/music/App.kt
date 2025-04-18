@@ -13,7 +13,7 @@ import coil.request.CachePolicy
 import com.soundify.music.constants.*
 import com.soundify.music.extensions.*
 import com.soundify.music.utils.dataStore
-import com.metrolist.music.utils.get
+import com.soundify.music.utils.get
 import com.soundify.music.utils.reportException
 import com.soundify.innertube.YouTube
 import com.soundify.innertube.models.YouTubeLocale
