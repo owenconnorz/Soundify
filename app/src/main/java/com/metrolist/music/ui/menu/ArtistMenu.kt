@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.menu
+package com.soundify.music.ui.menu
 
 import android.content.Intent
 import androidx.compose.foundation.clickable
@@ -21,14 +21,14 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.metrolist.music.LocalDatabase
-import com.metrolist.music.LocalPlayerConnection
-import com.metrolist.music.R
-import com.metrolist.music.constants.ArtistSongSortType
-import com.metrolist.music.db.entities.Artist
-import com.metrolist.music.extensions.toMediaItem
-import com.metrolist.music.playback.queues.ListQueue
-import com.metrolist.music.ui.component.ArtistListItem
+import com.soundify.music.LocalDatabase
+import com.soundify.music.LocalPlayerConnection
+import com.soundify.music.R
+import com.soundify.music.constants.ArtistSongSortType
+import com.soundify.music.db.entities.Artist
+import com.soundify.music.extensions.toMediaItem
+import com.soundify.music.playback.queues.ListQueue
+import com.soundify.music.ui.component.ArtistListItem
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.first
