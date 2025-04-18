@@ -1,4 +1,4 @@
-package com.metrolist.music.utils
+package com.soundify.music.utils
 
 import android.content.Context
 import android.graphics.Bitmap
