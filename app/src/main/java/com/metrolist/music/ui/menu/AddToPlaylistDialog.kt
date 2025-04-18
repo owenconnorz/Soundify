@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.menu
+package com.soundify.music.ui.menu
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -21,18 +21,18 @@ import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
-import com.metrolist.innertube.utils.parseCookieString
-import com.metrolist.music.LocalDatabase
+import com.soundify.innertube.utils.parseCookieString
+import com.soundify.music.LocalDatabase
 import com.metrolist.music.R
-import com.metrolist.music.constants.InnerTubeCookieKey
-import com.metrolist.music.constants.ListThumbnailSize
-import com.metrolist.music.db.entities.Playlist
-import com.metrolist.music.ui.component.CreatePlaylistDialog
-import com.metrolist.music.ui.component.DefaultDialog
-import com.metrolist.music.ui.component.ListDialog
-import com.metrolist.music.ui.component.ListItem
-import com.metrolist.music.ui.component.PlaylistListItem
-import com.metrolist.music.utils.rememberPreference
+import com.soundify.music.constants.InnerTubeCookieKey
+import com.soundify.music.constants.ListThumbnailSize
+import com.soundify.music.db.entities.Playlist
+import com.soundify.music.ui.component.CreatePlaylistDialog
+import com.soundify.music.ui.component.DefaultDialog
+import com.soundify.music.ui.component.ListDialog
+import com.soundify.music.ui.component.ListItem
+import com.soundify.music.ui.component.PlaylistListItem
+import com.soundify.music.utils.rememberPreference
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
