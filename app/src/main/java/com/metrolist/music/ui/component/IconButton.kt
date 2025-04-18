@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.component
+package com.soundify.music.ui.component
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.ExperimentalFoundationApi
