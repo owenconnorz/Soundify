@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.component
+package com.soundify.music.ui.component
 
 import android.widget.Toast
 import androidx.compose.foundation.layout.Arrangement
@@ -22,12 +22,12 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
-import com.metrolist.music.LocalDatabase
-import com.metrolist.music.R
-import com.metrolist.music.db.entities.PlaylistEntity
-import com.metrolist.innertube.YouTube
-import com.metrolist.music.constants.InnerTubeCookieKey
-import com.metrolist.music.utils.rememberPreference
+import com.soundify.music.LocalDatabase
+import com.soundify.music.R
+import com.soundify.music.db.entities.PlaylistEntity
+import com.soundify.innertube.YouTube
+import com.soundify.music.constants.InnerTubeCookieKey
+import com.soundify.music.utils.rememberPreference
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
