@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.component
+package com.soundify.music.ui.component
 
 import androidx.compose.material3.LocalTextStyle
 import androidx.compose.material3.Text
