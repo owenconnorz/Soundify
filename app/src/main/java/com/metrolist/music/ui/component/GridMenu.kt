@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.component
+package com.soundify.music.ui.component
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
@@ -32,8 +32,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.media3.exoplayer.offline.Download
-import com.metrolist.music.R
-import com.metrolist.music.utils.makeTimeString
+import com.soundify.music.R
+import com.soundify.music.utils.makeTimeString
 
 val GridMenuItemHeight = 108.dp
 
