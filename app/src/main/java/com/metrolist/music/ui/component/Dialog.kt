@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.component
+package com.soundifu.music.ui.component
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -45,7 +45,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
-import com.metrolist.music.R
+import com.soundify.music.R
 import kotlinx.coroutines.delay
 
 @Composable
