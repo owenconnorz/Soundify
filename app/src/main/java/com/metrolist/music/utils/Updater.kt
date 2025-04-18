@@ -1,4 +1,4 @@
-package com.metrolist.music.utils
+package com.soundify.music.utils
 
 import io.ktor.client.HttpClient
 import io.ktor.client.request.get
