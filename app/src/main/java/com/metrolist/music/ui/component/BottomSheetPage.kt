@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.component
+package com.soundify.music.ui.component
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.animation.AnimatedVisibility
@@ -41,8 +41,8 @@ import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.metrolist.music.R
-import com.metrolist.music.ui.utils.top
+import com.soundify.music.R
+import com.soundify.music.ui.utils.top
 
 val LocalBottomSheetPageState = compositionLocalOf { BottomSheetPageState() }
 
