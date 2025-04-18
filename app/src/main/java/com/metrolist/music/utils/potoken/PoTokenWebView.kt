@@ -1,4 +1,4 @@
-package com.metrolist.music.utils.potoken
+package com.soundify.music.utils.potoken
 
 import android.content.Context
 import android.util.Log
@@ -15,8 +15,8 @@ import kotlinx.coroutines.cancel
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlinx.coroutines.withContext
-import com.metrolist.music.BuildConfig
-import com.metrolist.innertube.YouTube
+import com.soundify.music.BuildConfig
+import com.soundify.innertube.YouTube
 import okhttp3.Headers.Companion.toHeaders
 import okhttp3.OkHttpClient
 import okhttp3.RequestBody.Companion.toRequestBody
