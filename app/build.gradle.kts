@@ -10,12 +10,12 @@ plugins {
 }
 
 android {
-    namespace = "com.metrolist.music"
+    namespace = "com.soundify.music"
     compileSdk = 35
     ndkVersion = "25.1.8937393"
 
     defaultConfig {
-        applicationId = "com.metrolist.music"
+        applicationId = "com.soundify.music"
         minSdk = 21
         targetSdk = 35
         versionCode = 116
