@@ -1,6 +1,6 @@
 @file:Suppress("DEPRECATION")
 
-package com.metrolist.music.utils
+package com.soundify.music.utils
 
 import android.annotation.TargetApi
 import android.content.Context
