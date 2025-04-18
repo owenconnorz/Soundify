@@ -1,19 +1,19 @@
-package com.metrolist.music.utils
+package com.soundify.music.utils
 
 import android.net.ConnectivityManager
 import android.util.Log
 import androidx.media3.common.PlaybackException
-import com.metrolist.music.constants.AudioQuality
-import com.metrolist.music.db.entities.FormatEntity
-import com.metrolist.innertube.NewPipeUtils
-import com.metrolist.innertube.YouTube
-import com.metrolist.innertube.models.YouTubeClient
-import com.metrolist.innertube.models.YouTubeClient.Companion.IOS
-import com.metrolist.innertube.models.YouTubeClient.Companion.TVHTML5_SIMPLY_EMBEDDED_PLAYER
-import com.metrolist.innertube.models.YouTubeClient.Companion.WEB_REMIX
-import com.metrolist.innertube.models.response.PlayerResponse
-import com.metrolist.music.utils.potoken.PoTokenGenerator
-import com.metrolist.music.utils.potoken.PoTokenResult
+import com.soundify.music.constants.AudioQuality
+import com.soundify.music.db.entities.FormatEntity
+import com.soundify.innertube.NewPipeUtils
+import com.soundify.innertube.YouTube
+import com.soundify.innertube.models.YouTubeClient
+import com.soundify.innertube.models.YouTubeClient.Companion.IOS
+import com.soundify.innertube.models.YouTubeClient.Companion.TVHTML5_SIMPLY_EMBEDDED_PLAYER
+import com.soundify.innertube.models.YouTubeClient.Companion.WEB_REMIX
+import com.soundify.innertube.models.response.PlayerResponse
+import com.soundify.music.utils.potoken.PoTokenGenerator
+import com.soundify.music.utils.potoken.PoTokenResult
 import okhttp3.OkHttpClient
 
 object YTPlayerUtils {
