@@ -1,14 +1,14 @@
-package com.metrolist.innertube.pages
+package com.soundify.innertube.pages
 
-import com.metrolist.innertube.models.Album
-import com.metrolist.innertube.models.AlbumItem
-import com.metrolist.innertube.models.Artist
-import com.metrolist.innertube.models.ArtistItem
-import com.metrolist.innertube.models.MusicResponsiveListItemRenderer
-import com.metrolist.innertube.models.SongItem
-import com.metrolist.innertube.models.YTItem
-import com.metrolist.innertube.models.oddElements
-import com.metrolist.innertube.models.splitBySeparator
+import com.soundify.innertube.models.Album
+import com.soundify.innertube.models.AlbumItem
+import com.soundify.innertube.models.Artist
+import com.soundify.innertube.models.ArtistItem
+import com.soundify.innertube.models.MusicResponsiveListItemRenderer
+import com.soundify.innertube.models.SongItem
+import com.soundify.innertube.models.YTItem
+import com.soundify.innertube.models.oddElements
+import com.soundify.innertube.models.splitBySeparator
 
 object SearchSuggestionPage {
     fun fromMusicResponsiveListItemRenderer(renderer: MusicResponsiveListItemRenderer): YTItem? {
