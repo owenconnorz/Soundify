@@ -1,4 +1,4 @@
-package com.metrolist.music.db
+package com.soundify.music.db
 
 import androidx.room.TypeConverter
 import java.time.Instant
