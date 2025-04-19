@@ -25,10 +25,6 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-      - name: Restore Persistent Keystore
-        run: |
-          echo "${{ secrets.DEBUG_KEYSTORE }}" | base64 -d > ./app/persistent-debug.keystore
-
       - name: Build Debug APK (Universal)
         run: ./gradlew assembleUniversalDebug
         env:
@@ -65,20 +61,10 @@ jobs:
         env:
           PULL_REQUEST: "true"
 
-      - name: Sign APK
-        uses: ilharp/sign-android-release@v1.0.4
-        with:
-          releaseDir: app/build/outputs/apk/universal/release/
-          signingKey: ${{ secrets.KEYSTORE }}
-          keyAlias: ${{ secrets.KEY_ALIAS }}
-          keyStorePassword: ${{ secrets.KEYSTORE_PASSWORD }}
-          keyPassword: ${{ secrets.KEY_PASSWORD }}
-          buildToolsVersion: 35.0.0
-
-      - name: Move signed release APK
+      - name: Move Release APK
         run: |
           mkdir -p app/build/outputs/apk/universal/release/out
-          find app/build/outputs/apk/universal/release/ -name "*-signed.apk" -o -name "*-unsigned-signed.apk" | xargs -I{} mv {} app/build/outputs/apk/universal/release/out/app-universal-release.apk
+          find app/build/outputs/apk/universal/release/ -name "*.apk" | xargs -I{} mv {} app/build/outputs/apk/universal/release/out/app-universal-release.apk
 
       - name: Upload Release APK
         uses: actions/upload-artifact@v4
