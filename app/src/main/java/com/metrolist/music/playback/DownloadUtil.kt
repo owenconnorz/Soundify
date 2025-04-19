@@ -1,4 +1,4 @@
-package com.metrolist.music.playback
+package com.soundify.music.playback
 
 import android.content.Context
 import android.net.ConnectivityManager
@@ -12,16 +12,16 @@ import androidx.media3.datasource.okhttp.OkHttpDataSource
 import androidx.media3.exoplayer.offline.Download
 import androidx.media3.exoplayer.offline.DownloadManager
 import androidx.media3.exoplayer.offline.DownloadNotificationHelper
-import com.metrolist.innertube.YouTube
-import com.metrolist.music.constants.AudioQuality
-import com.metrolist.music.constants.AudioQualityKey
-import com.metrolist.music.db.MusicDatabase
-import com.metrolist.music.db.entities.FormatEntity
-import com.metrolist.music.db.entities.SongEntity
-import com.metrolist.music.di.DownloadCache
-import com.metrolist.music.di.PlayerCache
-import com.metrolist.music.utils.YTPlayerUtils
-import com.metrolist.music.utils.enumPreference
+import com.soundify.innertube.YouTube
+import com.soundify.music.constants.AudioQuality
+import com.soundify.music.constants.AudioQualityKey
+import com.soundify.music.db.MusicDatabase
+import com.soundify.music.db.entities.FormatEntity
+import com.soundify.music.db.entities.SongEntity
+import com.soundify.music.di.DownloadCache
+import com.soundify.music.di.PlayerCache
+import com.soundify.music.utils.YTPlayerUtils
+import com.soundify.music.utils.enumPreference
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
