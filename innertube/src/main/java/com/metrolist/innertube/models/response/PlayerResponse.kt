@@ -1,8 +1,8 @@
-package com.metrolist.innertube.models.response
+package com.soundify.innertube.models.response
 
-import com.metrolist.innertube.models.ResponseContext
-import com.metrolist.innertube.models.Thumbnails
-import com.metrolist.innertube.utils.createUrl
+import com.soundify.innertube.models.ResponseContext
+import com.soundify.innertube.models.Thumbnails
+import com.soundify.innertube.utils.createUrl
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
