@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.screens.library
+package com.soundify.music.ui.screens.library
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.clickable
