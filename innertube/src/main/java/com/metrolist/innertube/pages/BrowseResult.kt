@@ -1,7 +1,7 @@
-package com.metrolist.innertube.pages
+package com.soundify.innertube.pages
 
-import com.metrolist.innertube.models.YTItem
-import com.metrolist.innertube.models.filterExplicit
+import com.soundify.innertube.models.YTItem
+import com.soundify.innertube.models.filterExplicit
 
 data class BrowseResult(
     val title: String?,
