@@ -1,6 +1,6 @@
-package com.metrolist.innertube.pages
+package com.soundify.innertube.pages
 
-import com.metrolist.innertube.models.*
+import com.soundify.innertube.models.*
 
 data class ChartsPage(
     val sections: List<ChartSection>,
