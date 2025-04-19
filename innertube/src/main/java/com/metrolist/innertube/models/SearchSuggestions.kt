@@ -1,4 +1,4 @@
-package com.metrolist.innertube.models
+package com.soundify.innertube.models
 
 data class SearchSuggestions(
     val queries: List<String>,
