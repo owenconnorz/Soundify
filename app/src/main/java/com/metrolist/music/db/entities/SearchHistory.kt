@@ -1,4 +1,4 @@
-package com.metrolist.music.db.entities
+package com.soundify.music.db.entities
 
 import androidx.room.Entity
 import androidx.room.Index
