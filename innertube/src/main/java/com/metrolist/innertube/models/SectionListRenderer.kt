@@ -1,6 +1,6 @@
-package com.metrolist.innertube.models
+package com.soundify.innertube.models
 
-import com.metrolist.innertube.models.response.BrowseResponse
+import com.soundify.innertube.models.response.BrowseResponse
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.JsonNames
