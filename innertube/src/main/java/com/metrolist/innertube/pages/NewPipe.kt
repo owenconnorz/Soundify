@@ -1,7 +1,7 @@
-package com.metrolist.innertube
+package com.soundify.innertube
 
-import com.metrolist.innertube.models.YouTubeClient
-import com.metrolist.innertube.models.response.PlayerResponse
+import com.soundify.innertube.models.YouTubeClient
+import com.soundify.innertube.models.response.PlayerResponse
 import io.ktor.http.URLBuilder
 import io.ktor.http.parseQueryString
 import okhttp3.OkHttpClient
