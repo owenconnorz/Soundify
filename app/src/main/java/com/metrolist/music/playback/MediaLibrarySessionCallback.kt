@@ -1,4 +1,4 @@
-package com.metrolist.music.playback
+package com.soundify.music.playback
 
 import android.content.ContentResolver
 import android.content.Context
@@ -19,14 +19,14 @@ import androidx.media3.session.SessionResult
 import com.google.common.collect.ImmutableList
 import com.google.common.util.concurrent.Futures
 import com.google.common.util.concurrent.ListenableFuture
-import com.metrolist.music.R
-import com.metrolist.music.constants.MediaSessionConstants
-import com.metrolist.music.constants.SongSortType
-import com.metrolist.music.db.MusicDatabase
-import com.metrolist.music.db.entities.PlaylistEntity
-import com.metrolist.music.db.entities.Song
-import com.metrolist.music.extensions.toMediaItem
-import com.metrolist.music.extensions.toggleRepeatMode
+import com.soundify.music.R
+import com.soundify.music.constants.MediaSessionConstants
+import com.soundify.music.constants.SongSortType
+import com.soundify.music.db.MusicDatabase
+import com.soundify.music.db.entities.PlaylistEntity
+import com.soundify.music.db.entities.Song
+import com.soundify.music.extensions.toMediaItem
+import com.soundify.music.extensions.toggleRepeatMode
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
