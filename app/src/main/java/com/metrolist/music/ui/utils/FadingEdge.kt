@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.utils
+package com.soundify.music.ui.utils
 
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.drawWithContent
