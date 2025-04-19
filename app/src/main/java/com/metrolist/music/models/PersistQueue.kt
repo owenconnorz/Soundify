@@ -1,4 +1,4 @@
-package com.metrolist.music.models
+package com.soundify.music.models
 
 import java.io.Serializable
 
