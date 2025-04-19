@@ -1,7 +1,7 @@
-package com.metrolist.music.playback.queues
+package com.soundify.music.playback.queues
 
 import androidx.media3.common.MediaItem
-import com.metrolist.music.models.MediaMetadata
+import com.soundify.music.models.MediaMetadata
 
 object EmptyQueue : Queue {
     override val preloadItem: MediaMetadata? = null
