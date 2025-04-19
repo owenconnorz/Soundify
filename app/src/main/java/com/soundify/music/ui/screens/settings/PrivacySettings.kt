@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.screens.settings
+package com.soundify.music.ui.screens.settings
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -25,20 +25,20 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.metrolist.music.LocalDatabase
-import com.metrolist.music.LocalPlayerAwareWindowInsets
-import com.metrolist.music.R
-import com.metrolist.music.constants.DisableScreenshotKey
-import com.metrolist.music.constants.PauseListenHistoryKey
-import com.metrolist.music.constants.PauseRemoteListenHistoryKey
-import com.metrolist.music.constants.PauseSearchHistoryKey
-import com.metrolist.music.ui.component.DefaultDialog
-import com.metrolist.music.ui.component.IconButton
-import com.metrolist.music.ui.component.PreferenceEntry
-import com.metrolist.music.ui.component.PreferenceGroupTitle
-import com.metrolist.music.ui.component.SwitchPreference
-import com.metrolist.music.ui.utils.backToMain
-import com.metrolist.music.utils.rememberPreference
+import com.soundify.music.LocalDatabase
+import com.soundify.music.LocalPlayerAwareWindowInsets
+import com.soundify.music.R
+import com.soundify.music.constants.DisableScreenshotKey
+import com.soundify.music.constants.PauseListenHistoryKey
+import com.soundify.music.constants.PauseRemoteListenHistoryKey
+import com.soundify.music.constants.PauseSearchHistoryKey
+import com.soundify.music.ui.component.DefaultDialog
+import com.soundify.music.ui.component.IconButton
+import com.soundify.music.ui.component.PreferenceEntry
+import com.soundify.music.ui.component.PreferenceGroupTitle
+import com.soundify.music.ui.component.SwitchPreference
+import com.soundify.music.ui.utils.backToMain
+import com.soundify.music.utils.rememberPreference
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
