@@ -1,4 +1,4 @@
-package com.metrolist.music.di
+package com.soundify.music.di
 
 import android.content.Context
 import androidx.media3.database.DatabaseProvider
@@ -6,11 +6,11 @@ import androidx.media3.database.StandaloneDatabaseProvider
 import androidx.media3.datasource.cache.LeastRecentlyUsedCacheEvictor
 import androidx.media3.datasource.cache.NoOpCacheEvictor
 import androidx.media3.datasource.cache.SimpleCache
-import com.metrolist.music.constants.MaxSongCacheSizeKey
-import com.metrolist.music.db.InternalDatabase
-import com.metrolist.music.db.MusicDatabase
-import com.metrolist.music.utils.dataStore
-import com.metrolist.music.utils.get
+import com.soundify.music.constants.MaxSongCacheSizeKey
+import com.soundify.music.db.InternalDatabase
+import com.soundify.music.db.MusicDatabase
+import com.soundify.music.utils.dataStore
+import com.soundify.music.utils.get
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
