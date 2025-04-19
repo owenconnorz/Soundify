@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.screens.settings
+package com.soundify.music.ui.screens.settings
 
 import android.annotation.TargetApi
 import android.content.Context
@@ -29,15 +29,15 @@ import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.floatPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.navigation.NavController
-import com.metrolist.innertube.YouTube
-import com.metrolist.music.LocalPlayerAwareWindowInsets
-import com.metrolist.music.R
-import com.metrolist.music.constants.*
-import com.metrolist.music.ui.component.*
-import com.metrolist.music.ui.utils.backToMain
-import com.metrolist.music.utils.LocaleManager
-import com.metrolist.music.utils.rememberEnumPreference
-import com.metrolist.music.utils.rememberPreference
+import com.soundify.innertube.YouTube
+import com.soundify.music.LocalPlayerAwareWindowInsets
+import com.soundify.music.R
+import com.soundify.music.constants.*
+import com.soundify.music.ui.component.*
+import com.soundify.music.ui.utils.backToMain
+import com.soundify.music.utils.LocaleManager
+import com.soundify.music.utils.rememberEnumPreference
+import com.soundify.music.utils.rememberPreference
 import java.net.Proxy
 import java.util.Locale
 
