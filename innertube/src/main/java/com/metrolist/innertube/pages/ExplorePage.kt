@@ -1,6 +1,6 @@
-package com.metrolist.innertube.pages
+package com.soundify.innertube.pages
 
-import com.metrolist.innertube.models.AlbumItem
+import com.soundify.innertube.models.AlbumItem
 
 data class ExplorePage(
     val newReleaseAlbums: List<AlbumItem>,
