@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.screens.library
+package com.soundify.music.ui.screens.library
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.combinedClickable
@@ -39,31 +39,31 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import com.metrolist.music.LocalPlayerAwareWindowInsets
-import com.metrolist.music.LocalPlayerConnection
-import com.metrolist.music.R
-import com.metrolist.music.constants.CONTENT_TYPE_HEADER
-import com.metrolist.music.constants.CONTENT_TYPE_SONG
-import com.metrolist.music.constants.SongFilter
-import com.metrolist.music.constants.SongFilterKey
-import com.metrolist.music.constants.SongSortDescendingKey
-import com.metrolist.music.constants.SongSortType
-import com.metrolist.music.constants.SongSortTypeKey
-import com.metrolist.music.constants.YtmSyncKey
-import com.metrolist.music.extensions.toMediaItem
-import com.metrolist.music.extensions.togglePlayPause
-import com.metrolist.music.playback.queues.ListQueue
-import com.metrolist.music.ui.component.ChipsRow
-import com.metrolist.music.ui.component.HideOnScrollFAB
-import com.metrolist.music.ui.component.LocalMenuState
-import com.metrolist.music.ui.component.SongListItem
-import com.metrolist.music.ui.component.SortHeader
-import com.metrolist.music.ui.menu.SelectionSongMenu
-import com.metrolist.music.ui.menu.SongMenu
-import com.metrolist.music.ui.utils.ItemWrapper
-import com.metrolist.music.utils.rememberEnumPreference
-import com.metrolist.music.utils.rememberPreference
-import com.metrolist.music.viewmodels.LibrarySongsViewModel
+import com.soundify.music.LocalPlayerAwareWindowInsets
+import com.soundify.music.LocalPlayerConnection
+import com.soundify.music.R
+import com.soundify.music.constants.CONTENT_TYPE_HEADER
+import com.soundify.music.constants.CONTENT_TYPE_SONG
+import com.soundify.music.constants.SongFilter
+import com.soundify.music.constants.SongFilterKey
+import com.soundify.music.constants.SongSortDescendingKey
+import com.soundify.music.constants.SongSortType
+import com.soundify.music.constants.SongSortTypeKey
+import com.soundify.music.constants.YtmSyncKey
+import com.soundify.music.extensions.toMediaItem
+import com.soundify.music.extensions.togglePlayPause
+import com.soundify.music.playback.queues.ListQueue
+import com.soundify.music.ui.component.ChipsRow
+import com.soundify.music.ui.component.HideOnScrollFAB
+import com.soundify.music.ui.component.LocalMenuState
+import com.soundify.music.ui.component.SongListItem
+import com.soundify.music.ui.component.SortHeader
+import com.soundify.music.ui.menu.SelectionSongMenu
+import com.soundify.music.ui.menu.SongMenu
+import com.soundify.music.ui.utils.ItemWrapper
+import com.soundify.music.utils.rememberEnumPreference
+import com.soundify.music.utils.rememberPreference
+import com.soundify.music.viewmodels.LibrarySongsViewModel
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
