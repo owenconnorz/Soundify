@@ -1,7 +1,7 @@
-package com.metrolist.innertube.models.response
+package com.soundify.innertube.models.response
 
-import com.metrolist.innertube.models.AccountInfo
-import com.metrolist.innertube.models.Runs
+import com.soundify.innertube.models.AccountInfo
+import com.soundify.innertube.models.Runs
 import kotlinx.serialization.Serializable
 
 @Serializable
