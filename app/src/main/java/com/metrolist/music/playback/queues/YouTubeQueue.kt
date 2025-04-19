@@ -1,10 +1,10 @@
-package com.metrolist.music.playback.queues
+package com.soundify.music.playback.queues
 
 import androidx.media3.common.MediaItem
-import com.metrolist.innertube.YouTube
-import com.metrolist.innertube.models.WatchEndpoint
-import com.metrolist.music.extensions.toMediaItem
-import com.metrolist.music.models.MediaMetadata
+import com.soundify.innertube.YouTube
+import com.soundify.innertube.models.WatchEndpoint
+import com.soundify.music.extensions.toMediaItem
+import com.soundify.music.models.MediaMetadata
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.withContext
 
