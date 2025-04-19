@@ -1,4 +1,4 @@
-package com.metrolist.innertube.models.response
+package com.soundify.innertube.models.response
 
 import kotlinx.serialization.Serializable
 
