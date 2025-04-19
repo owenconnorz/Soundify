@@ -1,13 +1,13 @@
-package com.metrolist.music.extensions
+package com.soundify.music.extensions
 
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
-import com.metrolist.music.constants.InnerTubeCookieKey
-import com.metrolist.music.constants.YtmSyncKey
-import com.metrolist.music.utils.dataStore
+import com.soundify.music.constants.InnerTubeCookieKey
+import com.soundify.music.constants.YtmSyncKey
+import com.soundify.music.utils.dataStore
 import com.metrolist.music.utils.get
-import com.metrolist.innertube.utils.parseCookieString
+import com.soundify.innertube.utils.parseCookieString
 import kotlinx.coroutines.runBlocking
 
 fun Context.isSyncEnabled(): Boolean {
