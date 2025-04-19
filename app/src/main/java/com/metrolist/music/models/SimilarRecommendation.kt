@@ -1,7 +1,7 @@
-package com.metrolist.music.models
+package com.soundify.music.models
 
-import com.metrolist.innertube.models.YTItem
-import com.metrolist.music.db.entities.LocalItem
+import com.soundify.innertube.models.YTItem
+import com.soundify.music.db.entities.LocalItem
 
 data class SimilarRecommendation(
     val title: LocalItem,
