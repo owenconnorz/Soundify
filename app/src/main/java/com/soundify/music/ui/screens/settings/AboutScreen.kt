@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.screens.settings
+package com.soundify.music.ui.screens.settings
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -36,11 +36,11 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.metrolist.music.BuildConfig
-import com.metrolist.music.LocalPlayerAwareWindowInsets
-import com.metrolist.music.R
-import com.metrolist.music.ui.component.IconButton
-import com.metrolist.music.ui.utils.backToMain
+import com.soundify.music.BuildConfig
+import com.soundify.music.LocalPlayerAwareWindowInsets
+import com.soundify.music.R
+import com.soundify.music.ui.component.IconButton
+import com.soundify.music.ui.utils.backToMain
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
