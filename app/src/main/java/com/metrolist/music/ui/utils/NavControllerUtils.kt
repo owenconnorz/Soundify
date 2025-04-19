@@ -1,8 +1,8 @@
-package com.metrolist.music.ui.utils
+package com.soundify.music.ui.utils
 
 import androidx.compose.ui.util.fastAny
 import androidx.navigation.NavController
-import com.metrolist.music.ui.screens.Screens
+import com.soundify.music.ui.screens.Screens
 
 val NavController.canNavigateUp: Boolean
     get() = currentBackStackEntry?.destination?.parent?.route != null
