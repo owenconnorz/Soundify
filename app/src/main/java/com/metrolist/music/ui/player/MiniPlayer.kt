@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.player
+package com.soundify.music.ui.player
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.fadeIn
@@ -43,12 +43,12 @@ import androidx.compose.ui.unit.sp
 import androidx.media3.common.PlaybackException
 import androidx.media3.common.Player
 import coil.compose.AsyncImage
-import com.metrolist.music.LocalPlayerConnection
-import com.metrolist.music.R
-import com.metrolist.music.constants.MiniPlayerHeight
-import com.metrolist.music.constants.ThumbnailCornerRadius
-import com.metrolist.music.extensions.togglePlayPause
-import com.metrolist.music.models.MediaMetadata
+import com.soundify.music.LocalPlayerConnection
+import com.soundify.music.R
+import com.soundify.music.constants.MiniPlayerHeight
+import com.soundify.music.constants.ThumbnailCornerRadius
+import com.soundify.music.extensions.togglePlayPause
+import com.soundify.music.models.MediaMetadata
 
 @Composable
 fun MiniPlayer(
