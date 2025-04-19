@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.utils
+package com.soundify.music.ui.utils
 
 import android.text.format.Formatter
 import android.widget.Toast
@@ -49,22 +49,22 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.DialogProperties
 import androidx.media3.common.util.UnstableApi
-import com.metrolist.innertube.YouTube
-import com.metrolist.innertube.models.MediaInfo
-import com.metrolist.music.LocalDatabase
-import com.metrolist.music.LocalPlayerConnection
-import com.metrolist.music.R
-import com.metrolist.music.constants.DarkModeKey
-import com.metrolist.music.constants.PureBlackKey
-import com.metrolist.music.db.entities.FormatEntity
-import com.metrolist.music.db.entities.Song
-import com.metrolist.music.ui.component.LocalMenuState
-import com.metrolist.music.ui.component.MenuState
-import com.metrolist.music.ui.component.shimmer.ShimmerHost
-import com.metrolist.music.ui.component.shimmer.TextPlaceholder
-import com.metrolist.music.ui.screens.settings.DarkMode
-import com.metrolist.music.utils.rememberEnumPreference
-import com.metrolist.music.utils.rememberPreference
+import com.soundify.innertube.YouTube
+import com.soundify.innertube.models.MediaInfo
+import com.soundify.music.LocalDatabase
+import com.soundify.music.LocalPlayerConnection
+import com.soundify.music.R
+import com.soundify.music.constants.DarkModeKey
+import com.soundify.music.constants.PureBlackKey
+import com.soundify.music.db.entities.FormatEntity
+import com.soundify.music.db.entities.Song
+import com.soundify.music.ui.component.LocalMenuState
+import com.soundify.music.ui.component.MenuState
+import com.soundify.music.ui.component.shimmer.ShimmerHost
+import com.soundify.music.ui.component.shimmer.TextPlaceholder
+import com.soundify.music.ui.screens.settings.DarkMode
+import com.soundify.music.utils.rememberEnumPreference
+import com.soundify.music.utils.rememberPreference
 
 @Composable
 fun ShowMediaInfo(videoId: String) {
