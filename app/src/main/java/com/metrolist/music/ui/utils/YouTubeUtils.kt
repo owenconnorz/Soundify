@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.utils
+package com.soundify.music.ui.utils
 
 fun String.resize(
     width: Int? = null,
