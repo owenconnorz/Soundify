@@ -1,4 +1,4 @@
-package com.metrolist.music.extensions
+package com.soundify.music.extensions
 
 fun <T> List<T>.reversed(reversed: Boolean) = if (reversed) asReversed() else this
 
