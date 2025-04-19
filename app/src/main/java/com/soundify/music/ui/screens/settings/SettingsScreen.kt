@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.screens.settings
+package com.soundify.music.ui.screens.settings
 
 import android.content.ActivityNotFoundException
 import android.content.Intent
@@ -21,13 +21,13 @@ import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavController
-import com.metrolist.music.BuildConfig
-import com.metrolist.music.LocalPlayerAwareWindowInsets
-import com.metrolist.music.R
-import com.metrolist.music.ui.component.IconButton
-import com.metrolist.music.ui.component.PreferenceEntry
-import com.metrolist.music.ui.component.ReleaseNotesCard
-import com.metrolist.music.ui.utils.backToMain
+import com.soundify.music.BuildConfig
+import com.soundify.music.LocalPlayerAwareWindowInsets
+import com.soundify.music.R
+import com.soundify.music.ui.component.IconButton
+import com.soundify.music.ui.component.PreferenceEntry
+import com.soundify.music.ui.component.ReleaseNotesCard
+import com.soundify.music.ui.utils.backToMain
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
