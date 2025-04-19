@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.screens.artist
+package com.soundify.music.ui.screens.artist
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.combinedClickable
@@ -32,26 +32,26 @@ import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.metrolist.music.LocalPlayerAwareWindowInsets
-import com.metrolist.music.LocalPlayerConnection
-import com.metrolist.music.R
-import com.metrolist.music.constants.ArtistSongSortDescendingKey
-import com.metrolist.music.constants.ArtistSongSortType
-import com.metrolist.music.constants.ArtistSongSortTypeKey
-import com.metrolist.music.constants.CONTENT_TYPE_HEADER
-import com.metrolist.music.extensions.toMediaItem
-import com.metrolist.music.extensions.togglePlayPause
-import com.metrolist.music.playback.queues.ListQueue
-import com.metrolist.music.ui.component.HideOnScrollFAB
-import com.metrolist.music.ui.component.IconButton
-import com.metrolist.music.ui.component.LocalMenuState
-import com.metrolist.music.ui.component.SongListItem
-import com.metrolist.music.ui.component.SortHeader
-import com.metrolist.music.ui.menu.SongMenu
-import com.metrolist.music.ui.utils.backToMain
-import com.metrolist.music.utils.rememberEnumPreference
-import com.metrolist.music.utils.rememberPreference
-import com.metrolist.music.viewmodels.ArtistSongsViewModel
+import com.soundify.music.LocalPlayerAwareWindowInsets
+import com.soundify.music.LocalPlayerConnection
+import com.soundify.music.R
+import com.soundify.music.constants.ArtistSongSortDescendingKey
+import com.soundify.music.constants.ArtistSongSortType
+import com.soundify.music.constants.ArtistSongSortTypeKey
+import com.soundify.music.constants.CONTENT_TYPE_HEADER
+import com.soundify.music.extensions.toMediaItem
+import com.soundify.music.extensions.togglePlayPause
+import com.soundify.music.playback.queues.ListQueue
+import com.soundify.music.ui.component.HideOnScrollFAB
+import com.soundify.music.ui.component.IconButton
+import com.soundify.music.ui.component.LocalMenuState
+import com.soundify.music.ui.component.SongListItem
+import com.soundify.music.ui.component.SortHeader
+import com.soundify.music.ui.menu.SongMenu
+import com.soundify.music.ui.utils.backToMain
+import com.soundify.music.utils.rememberEnumPreference
+import com.soundify.music.utils.rememberPreference
+import com.soundify.music.viewmodels.ArtistSongsViewModel
 
 @OptIn(ExperimentalFoundationApi::class, ExperimentalMaterial3Api::class)
 @Composable
