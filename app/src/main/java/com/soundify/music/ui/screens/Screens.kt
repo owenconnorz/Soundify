@@ -1,9 +1,9 @@
-package com.metrolist.music.ui.screens
+package com.soundify.music.ui.screens
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.compose.runtime.Immutable
-import com.metrolist.music.R
+import com.soundify.music.R
 
 @Immutable
 sealed class Screens(
