@@ -1,8 +1,8 @@
-package com.metrolist.innertube.models.response
+package com.soundify.innertube.models.response
 
-import com.metrolist.innertube.models.Continuation
-import com.metrolist.innertube.models.MusicResponsiveListItemRenderer
-import com.metrolist.innertube.models.Tabs
+import com.soundify.innertube.models.Continuation
+import com.soundify.innertube.models.MusicResponsiveListItemRenderer
+import com.soundify.innertube.models.Tabs
 import kotlinx.serialization.Serializable
 
 @Serializable
