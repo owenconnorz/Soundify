@@ -1,4 +1,4 @@
-package com.metrolist.music.extensions
+package com.soundify.music.extensions
 
 import androidx.media3.common.C
 import androidx.media3.common.MediaItem
@@ -7,7 +7,7 @@ import androidx.media3.common.Player.REPEAT_MODE_ALL
 import androidx.media3.common.Player.REPEAT_MODE_OFF
 import androidx.media3.common.Player.REPEAT_MODE_ONE
 import androidx.media3.common.Timeline
-import com.metrolist.music.models.MediaMetadata
+import com.soundify.music.models.MediaMetadata
 import java.util.ArrayDeque
 
 fun Player.togglePlayPause() {
