@@ -1,18 +1,18 @@
-package com.metrolist.innertube.pages
+package com.soundify.innertube.pages
 
-import com.metrolist.innertube.YouTube
-import com.metrolist.innertube.models.Album
-import com.metrolist.innertube.models.AlbumItem
-import com.metrolist.innertube.models.Artist
-import com.metrolist.innertube.models.MusicResponsiveHeaderRenderer
-import com.metrolist.innertube.models.MusicResponsiveListItemRenderer
-import com.metrolist.innertube.models.SongItem
-import com.metrolist.innertube.models.oddElements
-import com.metrolist.innertube.utils.parseTime
-import com.metrolist.innertube.models.getItems
-import com.metrolist.innertube.models.oddElements
-import com.metrolist.innertube.models.response.BrowseResponse
-import com.metrolist.innertube.models.splitBySeparator
+import com.soundify.innertube.YouTube
+import com.soundify.innertube.models.Album
+import com.soundify.innertube.models.AlbumItem
+import com.soundify.innertube.models.Artist
+import com.soundify.innertube.models.MusicResponsiveHeaderRenderer
+import com.soundify.innertube.models.MusicResponsiveListItemRenderer
+import com.soundify.innertube.models.SongItem
+import com.soundify.innertube.models.oddElements
+import com.soundify.innertube.utils.parseTime
+import com.soundify.innertube.models.getItems
+import com.soundify.innertube.models.oddElements
+import com.soundify.innertube.models.response.BrowseResponse
+import com.soundify.innertube.models.splitBySeparator
 
 data class AlbumPage(
     val album: AlbumItem,
