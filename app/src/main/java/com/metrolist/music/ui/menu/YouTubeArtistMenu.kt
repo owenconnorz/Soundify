@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.menu
+package com.soundify.music.ui.menu
 
 import android.content.Intent
 import androidx.compose.foundation.clickable
@@ -23,13 +23,13 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.metrolist.innertube.models.ArtistItem
-import com.metrolist.music.LocalDatabase
-import com.metrolist.music.LocalPlayerConnection
-import com.metrolist.music.R
-import com.metrolist.music.db.entities.ArtistEntity
-import com.metrolist.music.playback.queues.YouTubeQueue
-import com.metrolist.music.ui.component.YouTubeListItem
+import com.soundify.innertube.models.ArtistItem
+import com.soundify.music.LocalDatabase
+import com.soundify.music.LocalPlayerConnection
+import com.soundify.music.R
+import com.soundify.music.db.entities.ArtistEntity
+import com.soundify.music.playback.queues.YouTubeQueue
+import com.soundify.music.ui.component.YouTubeListItem
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
