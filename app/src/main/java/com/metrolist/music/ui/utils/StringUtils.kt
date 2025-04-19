@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.utils
+package com.soundify.music.ui.utils
 
 import java.text.DecimalFormat
 import kotlin.math.absoluteValue
