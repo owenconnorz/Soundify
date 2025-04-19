@@ -1,4 +1,4 @@
-package com.metrolist.music.constants
+package com.soundify.music.constants
 
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.spring
