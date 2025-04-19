@@ -1,4 +1,4 @@
-package com.metrolist.music.constants
+package com.soundify.music.constants
 
 enum class HistorySource {
     LOCAL, REMOTE
