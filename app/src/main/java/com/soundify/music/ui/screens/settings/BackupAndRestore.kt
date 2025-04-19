@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.screens.settings
+package com.soundify.music.ui.screens.settings
 
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
@@ -21,12 +21,12 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.metrolist.music.LocalPlayerAwareWindowInsets
-import com.metrolist.music.R
-import com.metrolist.music.ui.component.IconButton
-import com.metrolist.music.ui.component.PreferenceEntry
-import com.metrolist.music.ui.utils.backToMain
-import com.metrolist.music.viewmodels.BackupRestoreViewModel
+import com.soundify.music.LocalPlayerAwareWindowInsets
+import com.soundify.music.R
+import com.soundify.music.ui.component.IconButton
+import com.soundify.music.ui.component.PreferenceEntry
+import com.soundify.music.ui.utils.backToMain
+import com.soundify.music.viewmodels.BackupRestoreViewModel
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
