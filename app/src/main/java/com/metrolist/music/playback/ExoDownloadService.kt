@@ -1,4 +1,4 @@
-package com.metrolist.music.playback
+package com.soundifu.music.playback
 
 import android.app.Notification
 import android.app.PendingIntent
