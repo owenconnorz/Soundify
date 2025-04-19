@@ -1,6 +1,6 @@
-package com.metrolist.music.models
+package com.soundify.music.models
 
-import com.metrolist.innertube.models.YTItem
+import com.soundify.innertube.models.YTItem
 
 data class ItemsPage(
     val items: List<YTItem>,
