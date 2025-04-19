@@ -1,4 +1,4 @@
-package com.spundify.music.ui.screens
+package com.spondify.music.ui.screens
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.ExperimentalFoundationApi
