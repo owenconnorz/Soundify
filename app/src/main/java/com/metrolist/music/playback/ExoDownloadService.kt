@@ -1,4 +1,4 @@
-package com.soundifu.music.playback
+package com.soundify.music.playback
 
 import android.app.Notification
 import android.app.PendingIntent
