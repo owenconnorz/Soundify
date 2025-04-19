@@ -1,4 +1,4 @@
-package com.metrolist.music.extensions
+package com.soundify.music.extensions
 
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.CoroutineScope
