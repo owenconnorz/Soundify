@@ -1,14 +1,14 @@
-package com.metrolist.innertube.pages
+package com.soundify.innertube.pages
 
-import com.metrolist.innertube.models.Album
-import com.metrolist.innertube.models.Artist
-import com.metrolist.innertube.models.BrowseEndpoint
-import com.metrolist.innertube.models.PlaylistPanelVideoRenderer
-import com.metrolist.innertube.models.SongItem
-import com.metrolist.innertube.models.WatchEndpoint
-import com.metrolist.innertube.models.oddElements
-import com.metrolist.innertube.models.splitBySeparator
-import com.metrolist.innertube.utils.parseTime
+import com.soundify.innertube.models.Album
+import com.soundify.innertube.models.Artist
+import com.soundify.innertube.models.BrowseEndpoint
+import com.soundify.innertube.models.PlaylistPanelVideoRenderer
+import com.soundify.innertube.models.SongItem
+import com.soundify.innertube.models.WatchEndpoint
+import com.soundify.innertube.models.oddElements
+import com.soundify.innertube.models.splitBySeparator
+import com.soundify.innertube.utils.parseTime
 
 data class NextResult(
     val title: String? = null,
