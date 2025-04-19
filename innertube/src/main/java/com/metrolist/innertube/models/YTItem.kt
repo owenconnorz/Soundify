@@ -1,4 +1,4 @@
-package com.metrolist.innertube.models
+package com.soundify.innertube.models
 
 sealed class YTItem {
     abstract val id: String
