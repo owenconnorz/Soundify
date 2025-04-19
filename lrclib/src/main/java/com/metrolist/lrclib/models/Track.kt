@@ -1,4 +1,4 @@
-package com.metrolist.lrclib.models
+package com.soundify.lrclib.models
 
 import kotlinx.serialization.Serializable
 import kotlin.math.abs
