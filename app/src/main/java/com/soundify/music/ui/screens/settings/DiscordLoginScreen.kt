@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.screens.settings
+package com.soundify.music.ui.screens.settings
 
 import android.annotation.SuppressLint
 import android.view.ViewGroup
@@ -24,12 +24,12 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.navigation.NavController
-import com.metrolist.music.LocalPlayerAwareWindowInsets
-import com.metrolist.music.R
-import com.metrolist.music.constants.DiscordTokenKey
-import com.metrolist.music.ui.component.IconButton
-import com.metrolist.music.ui.utils.backToMain
-import com.metrolist.music.utils.rememberPreference
+import com.soundify.music.LocalPlayerAwareWindowInsets
+import com.soundify.music.R
+import com.soundify.music.constants.DiscordTokenKey
+import com.soundify.music.ui.component.IconButton
+import com.soundify.music.ui.utils.backToMain
+import com.soundify.music.utils.rememberPreference
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
