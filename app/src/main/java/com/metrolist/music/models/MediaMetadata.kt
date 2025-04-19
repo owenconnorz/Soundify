@@ -1,10 +1,10 @@
-package com.metrolist.music.models
+package com.soundify.music.models
 
 import androidx.compose.runtime.Immutable
-import com.metrolist.innertube.models.SongItem
-import com.metrolist.music.db.entities.Song
-import com.metrolist.music.db.entities.SongEntity
-import com.metrolist.music.ui.utils.resize
+import com.soundify.innertube.models.SongItem
+import com.soundify.music.db.entities.Song
+import com.soundify.music.db.entities.SongEntity
+import com.soundify.music.ui.utils.resize
 import java.io.Serializable
 
 @Immutable
