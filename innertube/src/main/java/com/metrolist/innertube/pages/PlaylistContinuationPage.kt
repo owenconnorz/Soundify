@@ -1,6 +1,6 @@
-package com.metrolist.innertube.pages
+package com.soundify.innertube.pages
 
-import com.metrolist.innertube.models.SongItem
+import com.soundify.innertube.models.SongItem
 
 data class PlaylistContinuationPage(
     val songs: List<SongItem>,
