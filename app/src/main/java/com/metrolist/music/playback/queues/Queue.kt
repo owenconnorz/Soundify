@@ -1,8 +1,8 @@
-package com.metrolist.music.playback.queues
+package com.soundify.music.playback.queues
 
 import androidx.media3.common.MediaItem
-import com.metrolist.music.extensions.metadata
-import com.metrolist.music.models.MediaMetadata
+import com.soundify.music.extensions.metadata
+import com.soundify.music.models.MediaMetadata
 
 interface Queue {
     val preloadItem: MediaMetadata?
