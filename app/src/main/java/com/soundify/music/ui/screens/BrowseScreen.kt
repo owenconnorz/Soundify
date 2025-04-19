@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.screens
+package com.soundify.music.ui.screens
  
  import androidx.compose.foundation.ExperimentalFoundationApi
  import androidx.compose.foundation.combinedClickable
@@ -21,23 +21,23 @@ package com.metrolist.music.ui.screens
  import androidx.compose.ui.unit.dp
  import androidx.hilt.navigation.compose.hiltViewModel
  import androidx.navigation.NavController
- import com.metrolist.music.LocalPlayerAwareWindowInsets
- import com.metrolist.music.LocalPlayerConnection
- import com.metrolist.music.R
- import com.metrolist.music.constants.GridThumbnailHeight
- import com.metrolist.music.ui.component.IconButton
- import com.metrolist.music.ui.component.LocalMenuState
- import com.metrolist.music.ui.component.YouTubeGridItem
- import com.metrolist.music.ui.component.shimmer.GridItemPlaceHolder
- import com.metrolist.music.ui.component.shimmer.ShimmerHost
- import com.metrolist.music.ui.menu.YouTubeAlbumMenu
- import com.metrolist.music.ui.menu.YouTubeArtistMenu
- import com.metrolist.music.ui.menu.YouTubePlaylistMenu
- import com.metrolist.music.ui.utils.backToMain
- import com.metrolist.music.viewmodels.BrowseViewModel
- import com.metrolist.innertube.models.AlbumItem
- import com.metrolist.innertube.models.ArtistItem
- import com.metrolist.innertube.models.PlaylistItem
+ import com.soundify.music.LocalPlayerAwareWindowInsets
+ import com.soundify.music.LocalPlayerConnection
+ import com.soundify.music.R
+ import com.soundify.music.constants.GridThumbnailHeight
+ import com.soundify.music.ui.component.IconButton
+ import com.soundify.music.ui.component.LocalMenuState
+ import com.soundify.music.ui.component.YouTubeGridItem
+ import com.soundify.music.ui.component.shimmer.GridItemPlaceHolder
+ import com.soundify.music.ui.component.shimmer.ShimmerHost
+ import com.soundify.music.ui.menu.YouTubeAlbumMenu
+ import com.soundify.music.ui.menu.YouTubeArtistMenu
+ import com.soundify.music.ui.menu.YouTubePlaylistMenu
+ import com.soundify.music.ui.utils.backToMain
+ import com.soundify.music.viewmodels.BrowseViewModel
+ import com.soundify.innertube.models.AlbumItem
+ import com.soundify.innertube.models.ArtistItem
+ import com.soundify.innertube.models.PlaylistItem
  
  @OptIn(ExperimentalFoundationApi::class, ExperimentalMaterial3Api::class)
  @Composable
