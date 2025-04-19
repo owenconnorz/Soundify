@@ -1,19 +1,19 @@
-package com.metrolist.innertube.models.response
+package com.soundify.innertube.models.response
 
-import com.metrolist.innertube.models.Button
-import com.metrolist.innertube.models.Continuation
-import com.metrolist.innertube.models.GridRenderer
-import com.metrolist.innertube.models.Menu
-import com.metrolist.innertube.models.MusicResponsiveListItemRenderer
-import com.metrolist.innertube.models.MusicShelfRenderer
-import com.metrolist.innertube.models.ResponseContext
-import com.metrolist.innertube.models.Runs
-import com.metrolist.innertube.models.SectionListRenderer
-import com.metrolist.innertube.models.SubscriptionButton
-import com.metrolist.innertube.models.Tabs
-import com.metrolist.innertube.models.ThumbnailRenderer
-import com.metrolist.innertube.models.Thumbnails
-import com.metrolist.innertube.pages.LibraryContinuationPage
+import com.soundify.innertube.models.Button
+import com.soundify.innertube.models.Continuation
+import com.soundify.innertube.models.GridRenderer
+import com.soundify.innertube.models.Menu
+import com.soundify.innertube.models.MusicResponsiveListItemRenderer
+import com.soundify.innertube.models.MusicShelfRenderer
+import com.soundify.innertube.models.ResponseContext
+import com.soundify.innertube.models.Runs
+import com.soundify.innertube.models.SectionListRenderer
+import com.soundify.innertube.models.SubscriptionButton
+import com.soundify.innertube.models.Tabs
+import com.soundify.innertube.models.ThumbnailRenderer
+import com.soundify.innertube.models.Thumbnails
+import com.soundify.innertube.pages.LibraryContinuationPage
 import kotlinx.serialization.Serializable
 
 @Serializable
