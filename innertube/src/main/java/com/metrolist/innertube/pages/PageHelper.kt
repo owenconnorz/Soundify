@@ -1,7 +1,7 @@
-package com.metrolist.innertube.pages
+package com.soundify.innertube.pages
 
-import com.metrolist.innertube.models.MusicResponsiveListItemRenderer.FlexColumn
-import com.metrolist.innertube.models.Run
+import com.soundify.innertube.models.MusicResponsiveListItemRenderer.FlexColumn
+import com.soundify.innertube.models.Run
 
 object PageHelper {
     fun extractRuns(columns: List<FlexColumn>, typeLike: String): List<Run> {
