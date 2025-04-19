@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.screens.settings
+package com.soundify.music.ui.screens.settings
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -35,26 +35,26 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.metrolist.music.LocalPlayerAwareWindowInsets
-import com.metrolist.music.R
-import com.metrolist.music.constants.AudioNormalizationKey
-import com.metrolist.music.constants.AudioQuality
-import com.metrolist.music.constants.AudioQualityKey
-import com.metrolist.music.constants.AutoLoadMoreKey
-import com.metrolist.music.constants.AutoSkipNextOnErrorKey
-import com.metrolist.music.constants.PersistentQueueKey
-import com.metrolist.music.constants.SimilarContent
-import com.metrolist.music.constants.SkipSilenceKey
-import com.metrolist.music.constants.StopMusicOnTaskClearKey
-import com.metrolist.music.constants.HistoryDuration
-import com.metrolist.music.ui.component.EnumListPreference
-import com.metrolist.music.ui.component.IconButton
-import com.metrolist.music.ui.component.PreferenceGroupTitle
-import com.metrolist.music.ui.component.SliderPreference
-import com.metrolist.music.ui.component.SwitchPreference
-import com.metrolist.music.ui.utils.backToMain
-import com.metrolist.music.utils.rememberEnumPreference
-import com.metrolist.music.utils.rememberPreference
+import com.soundify.music.LocalPlayerAwareWindowInsets
+import com.soundify.music.R
+import com.soundify.music.constants.AudioNormalizationKey
+import com.soundify.music.constants.AudioQuality
+import com.soundify.music.constants.AudioQualityKey
+import com.soundify.music.constants.AutoLoadMoreKey
+import com.soundify.music.constants.AutoSkipNextOnErrorKey
+import com.soundify.music.constants.PersistentQueueKey
+import com.soundify.music.constants.SimilarContent
+import com.soundify.music.constants.SkipSilenceKey
+import com.soundify.music.constants.StopMusicOnTaskClearKey
+import com.soundify.music.constants.HistoryDuration
+import com.soundify.music.ui.component.EnumListPreference
+import com.soundify.music.ui.component.IconButton
+import com.soundify.music.ui.component.PreferenceGroupTitle
+import com.soundify.music.ui.component.SliderPreference
+import com.soundify.music.ui.component.SwitchPreference
+import com.soundify.music.ui.utils.backToMain
+import com.soundify.music.utils.rememberEnumPreference
+import com.soundify.music.utils.rememberPreference
 import kotlin.math.roundToInt
 
 @OptIn(ExperimentalMaterial3Api::class)
