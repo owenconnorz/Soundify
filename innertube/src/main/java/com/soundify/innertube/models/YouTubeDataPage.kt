@@ -152,7 +152,7 @@ data class YouTubeDataPage(
                                     @Serializable
                                     data class Thumbnail(
                                         @SerialName("thumbnails")
-                                        val thumbnails: List<com.metrolist.innertube.models.Thumbnail>? = null,
+                                        val thumbnails: List<com.soundify.innertube.models.Thumbnail>? = null,
                                     )
 
                                     @Serializable
