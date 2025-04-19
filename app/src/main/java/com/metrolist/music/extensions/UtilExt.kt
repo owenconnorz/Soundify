@@ -1,4 +1,4 @@
-package com.metrolist.music.extensions
+package com.soundify.music.extensions
 
 fun <T> tryOrNull(block: () -> T): T? =
     try {
