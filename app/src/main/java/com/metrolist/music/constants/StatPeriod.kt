@@ -1,6 +1,6 @@
-package com.metrolist.music.constants
+package com.soundify.music.constants
 
-import com.metrolist.music.ui.screens.OptionStats
+import com.soundify.music.ui.screens.OptionStats
 import java.time.LocalDateTime
 import java.time.ZoneOffset
 
