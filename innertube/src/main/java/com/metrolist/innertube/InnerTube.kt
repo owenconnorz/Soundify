@@ -1,14 +1,14 @@
-package com.metrolist.innertube
+package com.soundify.innertube
 
-import com.metrolist.innertube.models.Context
-import com.metrolist.innertube.models.MediaInfo
-import com.metrolist.innertube.models.ReturnYouTubeDislikeResponse
-import com.metrolist.innertube.models.YouTubeClient
-import com.metrolist.innertube.models.YouTubeLocale
-import com.metrolist.innertube.models.body.*
-import com.metrolist.innertube.models.response.NextResponse
-import com.metrolist.innertube.utils.parseCookieString
-import com.metrolist.innertube.utils.sha1
+import com.soundify.innertube.models.Context
+import com.soundify.innertube.models.MediaInfo
+import com.soundify.innertube.models.ReturnYouTubeDislikeResponse
+import com.soundify.innertube.models.YouTubeClient
+import com.soundify.innertube.models.YouTubeLocale
+import com.soundify.innertube.models.body.*
+import com.soundify.innertube.models.response.NextResponse
+import com.soundify.innertube.utils.parseCookieString
+import com.soundify.innertube.utils.sha1
 import io.ktor.client.*
 import io.ktor.client.call.body
 import io.ktor.client.engine.okhttp.*
