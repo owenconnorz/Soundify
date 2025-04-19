@@ -1,12 +1,12 @@
-package com.metrolist.music.extensions
+package com.soundify.music.extensions
 
 import androidx.core.net.toUri
 import androidx.media3.common.MediaItem
 import androidx.media3.common.MediaMetadata.MEDIA_TYPE_MUSIC
-import com.metrolist.innertube.models.SongItem
-import com.metrolist.music.db.entities.Song
-import com.metrolist.music.models.MediaMetadata
-import com.metrolist.music.models.toMediaMetadata
+import com.soundify.innertube.models.SongItem
+import com.soundify.music.db.entities.Song
+import com.soundify.music.models.MediaMetadata
+import com.soundify.music.models.toMediaMetadata
 
 val MediaItem.metadata: MediaMetadata?
     get() = localConfiguration?.tag as? MediaMetadata
