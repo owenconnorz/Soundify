@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.player
+package com.soundify.music.ui.player
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.fadeIn
@@ -42,14 +42,14 @@ import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
-import com.metrolist.music.LocalPlayerConnection
-import com.metrolist.music.R
+import com.soundify.music.LocalPlayerConnection
+import com.soundify.music.R
 import com.metrolist.music.constants.PlayerHorizontalPadding
-import com.metrolist.music.constants.ShowLyricsKey
-import com.metrolist.music.constants.SwipeThumbnailKey
-import com.metrolist.music.constants.ThumbnailCornerRadius
-import com.metrolist.music.ui.component.Lyrics
-import com.metrolist.music.utils.rememberPreference
+import com.soundify.music.constants.ShowLyricsKey
+import com.soundify.music.constants.SwipeThumbnailKey
+import com.soundify.music.constants.ThumbnailCornerRadius
+import com.soundify.music.ui.component.Lyrics
+import com.soundify.music.utils.rememberPreference
 import kotlinx.coroutines.delay
 import kotlin.math.absoluteValue
 import kotlin.math.roundToInt
