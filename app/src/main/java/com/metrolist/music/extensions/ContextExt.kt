@@ -6,7 +6,7 @@ import android.net.NetworkCapabilities
 import com.soundify.music.constants.InnerTubeCookieKey
 import com.soundify.music.constants.YtmSyncKey
 import com.soundify.music.utils.dataStore
-import com.metrolist.music.utils.get
+import com.soundify.music.utils.get
 import com.soundify.innertube.utils.parseCookieString
 import kotlinx.coroutines.runBlocking
 
