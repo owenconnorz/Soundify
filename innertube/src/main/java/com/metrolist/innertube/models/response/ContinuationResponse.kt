@@ -1,6 +1,6 @@
-package com.metrolist.innertube.models.response
+package com.soundify.innertube.models.response
  
- import com.metrolist.innertube.models.MusicShelfRenderer
+ import com.soundify.innertube.models.MusicShelfRenderer
  import kotlinx.serialization.Serializable
  
  @Serializable
