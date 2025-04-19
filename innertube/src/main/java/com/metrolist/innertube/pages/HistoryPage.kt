@@ -1,12 +1,12 @@
-package com.metrolist.innertube.pages
+package com.soundify.innertube.pages
 
-import com.metrolist.innertube.models.Album
-import com.metrolist.innertube.models.Artist
-import com.metrolist.innertube.models.MusicResponsiveListItemRenderer
-import com.metrolist.innertube.models.MusicShelfRenderer
-import com.metrolist.innertube.models.SongItem
-import com.metrolist.innertube.models.oddElements
-import com.metrolist.innertube.utils.parseTime
+import com.soundify.innertube.models.Album
+import com.soundify.innertube.models.Artist
+import com.soundify.innertube.models.MusicResponsiveListItemRenderer
+import com.soundify.innertube.models.MusicShelfRenderer
+import com.soundify.innertube.models.SongItem
+import com.soundify.innertube.models.oddElements
+import com.soundify.innertube.utils.parseTime
 
 data class HistoryPage(
     val sections: List<HistorySection>?,
