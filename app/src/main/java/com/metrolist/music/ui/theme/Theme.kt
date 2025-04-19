@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.theme
+package com.soundify.music.ui.theme
 
 import android.graphics.Bitmap
 import android.os.Build
