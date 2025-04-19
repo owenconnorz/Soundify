@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.screens.settings
+package com.soundify.music.ui.screens.settings
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.WindowInsetsSides
@@ -27,28 +27,28 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.datastore.preferences.core.edit
 import androidx.navigation.NavController
-import com.metrolist.innertube.YouTube
-import com.metrolist.innertube.utils.parseCookieString
-import com.metrolist.music.App.Companion.forgetAccount
-import com.metrolist.music.LocalPlayerAwareWindowInsets
-import com.metrolist.music.R
-import com.metrolist.music.constants.AccountChannelHandleKey
-import com.metrolist.music.constants.AccountEmailKey
-import com.metrolist.music.constants.AccountNameKey
-import com.metrolist.music.constants.DataSyncIdKey
-import com.metrolist.music.constants.InnerTubeCookieKey
-import com.metrolist.music.constants.UseLoginForBrowse
-import com.metrolist.music.constants.VisitorDataKey
-import com.metrolist.music.constants.YtmSyncKey
-import com.metrolist.music.ui.component.IconButton
-import com.metrolist.music.ui.component.InfoLabel
-import com.metrolist.music.ui.component.PreferenceEntry
-import com.metrolist.music.ui.component.PreferenceGroupTitle
-import com.metrolist.music.ui.component.SwitchPreference
-import com.metrolist.music.ui.component.TextFieldDialog
-import com.metrolist.music.ui.utils.backToMain
-import com.metrolist.music.utils.dataStore
-import com.metrolist.music.utils.rememberPreference
+import com.soundify.innertube.YouTube
+import com.soundify.innertube.utils.parseCookieString
+import com.soundify.music.App.Companion.forgetAccount
+import com.soundify.music.LocalPlayerAwareWindowInsets
+import com.soundify.music.R
+import com.soundify.music.constants.AccountChannelHandleKey
+import com.soundify.music.constants.AccountEmailKey
+import com.soundify.music.constants.AccountNameKey
+import com.soundify.music.constants.DataSyncIdKey
+import com.soundify.music.constants.InnerTubeCookieKey
+import com.soundify.music.constants.UseLoginForBrowse
+import com.soundify.music.constants.VisitorDataKey
+import com.soundify.music.constants.YtmSyncKey
+import com.soundify.music.ui.component.IconButton
+import com.soumdify.music.ui.component.InfoLabel
+import com.soundify.music.ui.component.PreferenceEntry
+import com.soundify.music.ui.component.PreferenceGroupTitle
+import com.soundify.music.ui.component.SwitchPreference
+import com.soundify.music.ui.component.TextFieldDialog
+import com.soundify.music.ui.utils.backToMain
+import com.soundify.music.utils.dataStore
+import com.soundify.music.utils.rememberPreference
 import kotlinx.coroutines.runBlocking
 
 @OptIn(ExperimentalMaterial3Api::class)
