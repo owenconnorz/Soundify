@@ -1,12 +1,12 @@
-package com.metrolist.innertube.utils
+package com.soundify.innertube.utils
 
-import com.metrolist.innertube.YouTube
-import com.metrolist.innertube.models.AlbumItem
-import com.metrolist.innertube.models.ArtistItem
-import com.metrolist.innertube.models.PlaylistItem
-import com.metrolist.innertube.pages.LibraryContinuationPage
-import com.metrolist.innertube.pages.LibraryPage
-import com.metrolist.innertube.pages.PlaylistPage
+import com.soundify.innertube.YouTube
+import com.soundify.innertube.models.AlbumItem
+import com.soundify.innertube.models.ArtistItem
+import com.soundify.innertube.models.PlaylistItem
+import com.soundify.innertube.pages.LibraryContinuationPage
+import com.soundify.innertube.pages.LibraryPage
+import com.soundify.innertube.pages.PlaylistPage
 import io.ktor.http.URLBuilder
 import io.ktor.http.parseQueryString
 import java.security.MessageDigest
