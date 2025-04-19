@@ -1,4 +1,4 @@
-package com.metrolist.innertube.models
+package com.soundify.innertube.models
 
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.Serializable
