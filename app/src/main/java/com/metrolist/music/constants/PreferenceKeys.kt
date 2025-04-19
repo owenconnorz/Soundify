@@ -1,4 +1,4 @@
-package com.metrolist.music.constants
+package com.soundify.music.constants
 
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.floatPreferencesKey
