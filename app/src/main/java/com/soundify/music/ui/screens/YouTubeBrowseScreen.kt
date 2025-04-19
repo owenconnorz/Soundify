@@ -1,6 +1,6 @@
 @file:Suppress("UNUSED_EXPRESSION")
 
-package com.metrolist.music.ui.screens
+package com.soundify.music.ui.screens
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.clickable
@@ -43,32 +43,32 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.util.fastForEach
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.metrolist.innertube.models.AlbumItem
-import com.metrolist.innertube.models.ArtistItem
-import com.metrolist.innertube.models.PlaylistItem
-import com.metrolist.innertube.models.SongItem
-import com.metrolist.music.LocalPlayerAwareWindowInsets
-import com.metrolist.music.LocalPlayerConnection
-import com.metrolist.music.R
-import com.metrolist.music.constants.ListItemHeight
-import com.metrolist.music.extensions.togglePlayPause
-import com.metrolist.music.models.toMediaMetadata
-import com.metrolist.music.playback.queues.YouTubeQueue
-import com.metrolist.music.ui.component.IconButton
-import com.metrolist.music.ui.component.LocalMenuState
-import com.metrolist.music.ui.component.NavigationTitle
-import com.metrolist.music.ui.component.YouTubeGridItem
-import com.metrolist.music.ui.component.YouTubeListItem
-import com.metrolist.music.ui.component.shimmer.GridItemPlaceHolder
-import com.metrolist.music.ui.component.shimmer.ShimmerHost
-import com.metrolist.music.ui.component.shimmer.TextPlaceholder
-import com.metrolist.music.ui.menu.YouTubeAlbumMenu
-import com.metrolist.music.ui.menu.YouTubeArtistMenu
-import com.metrolist.music.ui.menu.YouTubePlaylistMenu
-import com.metrolist.music.ui.menu.YouTubeSongMenu
-import com.metrolist.music.ui.utils.SnapLayoutInfoProvider
-import com.metrolist.music.ui.utils.backToMain
-import com.metrolist.music.viewmodels.YouTubeBrowseViewModel
+import com.soundify.innertube.models.AlbumItem
+import com.soundify.innertube.models.ArtistItem
+import com.soundify.innertube.models.PlaylistItem
+import com.soundify.innertube.models.SongItem
+import com.soundify.music.LocalPlayerAwareWindowInsets
+import com.soundify.music.LocalPlayerConnection
+import com.soundify.music.R
+import com.soundify.music.constants.ListItemHeight
+import com.soundify.music.extensions.togglePlayPause
+import com.soundify.music.models.toMediaMetadata
+import com.soundify.music.playback.queues.YouTubeQueue
+import com.soundify.music.ui.component.IconButton
+import com.soundify.music.ui.component.LocalMenuState
+import com.soundify.music.ui.component.NavigationTitle
+import com.soundify.music.ui.component.YouTubeGridItem
+import com.soundify.music.ui.component.YouTubeListItem
+import com.soundify.music.ui.component.shimmer.GridItemPlaceHolder
+import com.soundify.music.ui.component.shimmer.ShimmerHost
+import com.soundify.music.ui.component.shimmer.TextPlaceholder
+import com.soundify.music.ui.menu.YouTubeAlbumMenu
+import com.soundify.music.ui.menu.YouTubeArtistMenu
+import com.soundify.music.ui.menu.YouTubePlaylistMenu
+import com.soundify.music.ui.menu.YouTubeSongMenu
+import com.soundify.music.ui.utils.SnapLayoutInfoProvider
+import com.soundify.music.ui.utils.backToMain
+import com.soundify.music.viewmodels.YouTubeBrowseViewModel
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class)
 @Composable
