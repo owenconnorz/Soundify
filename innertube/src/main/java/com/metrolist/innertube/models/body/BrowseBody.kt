@@ -1,7 +1,7 @@
-package com.metrolist.innertube.models.body
+package com.soundify.innertube.models.body
 
-import com.metrolist.innertube.models.Context
-import com.metrolist.innertube.models.Continuation
+import com.soundify.innertube.models.Context
+import com.soundify.innertube.models.Continuation
 import kotlinx.serialization.Serializable
 
 @Serializable
