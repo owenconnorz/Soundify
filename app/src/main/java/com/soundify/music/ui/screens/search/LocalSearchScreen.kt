@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.screens.search
+package com.soundify.music.ui.screens.search
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.clickable
@@ -30,27 +30,27 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.metrolist.music.LocalPlayerConnection
-import com.metrolist.music.R
-import com.metrolist.music.constants.CONTENT_TYPE_LIST
-import com.metrolist.music.constants.ListItemHeight
-import com.metrolist.music.db.entities.Album
-import com.metrolist.music.db.entities.Artist
-import com.metrolist.music.db.entities.Playlist
-import com.metrolist.music.db.entities.Song
-import com.metrolist.music.extensions.toMediaItem
-import com.metrolist.music.extensions.togglePlayPause
-import com.metrolist.music.playback.queues.ListQueue
-import com.metrolist.music.ui.component.AlbumListItem
-import com.metrolist.music.ui.component.ArtistListItem
-import com.metrolist.music.ui.component.ChipsRow
-import com.metrolist.music.ui.component.EmptyPlaceholder
-import com.metrolist.music.ui.component.LocalMenuState
-import com.metrolist.music.ui.component.PlaylistListItem
-import com.metrolist.music.ui.component.SongListItem
-import com.metrolist.music.ui.menu.SongMenu
-import com.metrolist.music.viewmodels.LocalFilter
-import com.metrolist.music.viewmodels.LocalSearchViewModel
+import com.soundify.music.LocalPlayerConnection
+import com.soundify.music.R
+import com.soundify.music.constants.CONTENT_TYPE_LIST
+import com.soundify.music.constants.ListItemHeight
+import com.soundify.music.db.entities.Album
+import com.soundify.music.db.entities.Artist
+import com.soundify.music.db.entities.Playlist
+import com.soundify.music.db.entities.Song
+import com.soundify.music.extensions.toMediaItem
+import com.soundify.music.extensions.togglePlayPause
+import com.soundify.music.playback.queues.ListQueue
+import com.soundify.music.ui.component.AlbumListItem
+import com.soundify.music.ui.component.ArtistListItem
+import com.soundify.music.ui.component.ChipsRow
+import com.soundify.music.ui.component.EmptyPlaceholder
+import com.soundify.music.ui.component.LocalMenuState
+import com.soundify.music.ui.component.PlaylistListItem
+import com.soundify.music.ui.component.SongListItem
+import com.soundify.music.ui.menu.SongMenu
+import com.soundify.music.viewmodels.LocalFilter
+import com.soundify.music.viewmodels.LocalSearchViewModel
 import kotlinx.coroutines.flow.drop
 
 @OptIn(ExperimentalFoundationApi::class)
