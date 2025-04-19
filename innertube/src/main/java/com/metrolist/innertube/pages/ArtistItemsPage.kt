@@ -1,15 +1,15 @@
-package com.metrolist.innertube.pages
+package com.soundify.innertube.pages
 
-import com.metrolist.innertube.models.Album
-import com.metrolist.innertube.models.AlbumItem
-import com.metrolist.innertube.models.Artist
-import com.metrolist.innertube.models.MusicResponsiveListItemRenderer
-import com.metrolist.innertube.models.MusicTwoRowItemRenderer
-import com.metrolist.innertube.models.PlaylistItem
-import com.metrolist.innertube.models.SongItem
-import com.metrolist.innertube.models.YTItem
-import com.metrolist.innertube.models.oddElements
-import com.metrolist.innertube.utils.parseTime
+import com.soundify.innertube.models.Album
+import com.soundify.innertube.models.AlbumItem
+import com.soundify.innertube.models.Artist
+import com.soundify.innertube.models.MusicResponsiveListItemRenderer
+import com.soundify.innertube.models.MusicTwoRowItemRenderer
+import com.soundify.innertube.models.PlaylistItem
+import com.soundify.innertube.models.SongItem
+import com.soundify.innertube.models.YTItem
+import com.soundify.innertube.models.oddElements
+import com.soundify.innertube.utils.parseTime
 
 data class ArtistItemsPage(
     val title: String,
