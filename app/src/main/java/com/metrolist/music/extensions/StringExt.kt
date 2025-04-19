@@ -1,4 +1,4 @@
-package com.metrolist.music.extensions
+package com.soundify.music.extensions
 
 import androidx.sqlite.db.SimpleSQLiteQuery
 import java.net.InetSocketAddress
