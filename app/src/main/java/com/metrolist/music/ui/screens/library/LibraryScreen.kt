@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.screens.library
+package com.soundify.music.ui.screens.library
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
@@ -9,11 +9,11 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavController
-import com.metrolist.music.R
-import com.metrolist.music.constants.ChipSortTypeKey
-import com.metrolist.music.constants.LibraryFilter
-import com.metrolist.music.ui.component.ChipsRow
-import com.metrolist.music.utils.rememberEnumPreference
+import com.soundify.music.R
+import com.soundify.music.constants.ChipSortTypeKey
+import com.soundify.music.constants.LibraryFilter
+import com.soundify.music.ui.component.ChipsRow
+import com.soundify.music.utils.rememberEnumPreference
 
 @Composable
 fun LibraryScreen(navController: NavController) {
