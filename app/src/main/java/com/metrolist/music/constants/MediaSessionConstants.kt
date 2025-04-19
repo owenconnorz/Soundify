@@ -1,4 +1,4 @@
-package com.metrolist.music.constants
+package com.soundify.music.constants
 
 import android.os.Bundle
 import androidx.media3.session.SessionCommand
