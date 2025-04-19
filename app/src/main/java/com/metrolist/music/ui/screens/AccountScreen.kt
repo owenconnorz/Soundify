@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.screens
+package com.soundify.music.ui.screens
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.combinedClickable
@@ -23,19 +23,19 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.metrolist.music.LocalPlayerAwareWindowInsets
-import com.metrolist.music.R
-import com.metrolist.music.constants.GridThumbnailHeight
-import com.metrolist.music.ui.component.IconButton
-import com.metrolist.music.ui.component.LocalMenuState
-import com.metrolist.music.ui.component.YouTubeGridItem
-import com.metrolist.music.ui.component.shimmer.GridItemPlaceHolder
-import com.metrolist.music.ui.component.shimmer.ShimmerHost
-import com.metrolist.music.ui.menu.YouTubeAlbumMenu
-import com.metrolist.music.ui.menu.YouTubeArtistMenu
-import com.metrolist.music.ui.menu.YouTubePlaylistMenu
-import com.metrolist.music.ui.utils.backToMain
-import com.metrolist.music.viewmodels.AccountViewModel
+import com.soundify.music.LocalPlayerAwareWindowInsets
+import com.soundify.music.R
+import com.soundify.music.constants.GridThumbnailHeight
+import com.soundify.music.ui.component.IconButton
+import com.soundify.music.ui.component.LocalMenuState
+import com.soundify.music.ui.component.YouTubeGridItem
+import com.soundify.music.ui.component.shimmer.GridItemPlaceHolder
+import com.soundify.music.ui.component.shimmer.ShimmerHost
+import com.soundify.music.ui.menu.YouTubeAlbumMenu
+import com.soundify.music.ui.menu.YouTubeArtistMenu
+import com.soundify.music.ui.menu.YouTubePlaylistMenu
+import com.soundify.music.ui.utils.backToMain
+import com.soundify.music.viewmodels.AccountViewModel
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class)
 @Composable
