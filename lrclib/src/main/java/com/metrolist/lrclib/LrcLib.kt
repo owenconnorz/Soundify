@@ -1,7 +1,7 @@
-package com.metrolist.lrclib
+package com.soundify.lrclib
 
-import com.metrolist.lrclib.models.Track
-import com.metrolist.lrclib.models.bestMatchingFor
+import com.soundify.lrclib.models.Track
+import com.soundify.lrclib.models.bestMatchingFor
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.engine.cio.CIO
