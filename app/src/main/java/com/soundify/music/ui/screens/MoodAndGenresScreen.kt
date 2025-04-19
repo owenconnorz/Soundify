@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.screens
+package com.soundify.music.ui.screens
 
 import android.content.res.Configuration.ORIENTATION_LANDSCAPE
 import androidx.compose.foundation.background
@@ -31,14 +31,14 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.metrolist.music.LocalPlayerAwareWindowInsets
-import com.metrolist.music.R
-import com.metrolist.music.ui.component.IconButton
-import com.metrolist.music.ui.component.NavigationTitle
-import com.metrolist.music.ui.component.shimmer.ListItemPlaceHolder
-import com.metrolist.music.ui.component.shimmer.ShimmerHost
-import com.metrolist.music.ui.utils.backToMain
-import com.metrolist.music.viewmodels.MoodAndGenresViewModel
+import com.soundify.music.LocalPlayerAwareWindowInsets
+import com.soundify.music.R
+import com.soundify.music.ui.component.IconButton
+import com.soundify.music.ui.component.NavigationTitle
+import com.soundify.music.ui.component.shimmer.ListItemPlaceHolder
+import com.soundify.music.ui.component.shimmer.ShimmerHost
+import com.soundify.music.ui.utils.backToMain
+import com.soundify.music.viewmodels.MoodAndGenresViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
