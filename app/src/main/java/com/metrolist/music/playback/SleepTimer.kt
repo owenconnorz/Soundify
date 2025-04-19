@@ -1,4 +1,4 @@
-package com.metrolist.music.playback
+package com.soundify.music.playback
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
