@@ -1,4 +1,4 @@
-package com.metrolist.music.playback
+package com.soundify.music.playback
 
 import android.content.Context
 import androidx.media3.common.MediaItem
@@ -10,14 +10,14 @@ import androidx.media3.common.Player.COMMAND_SEEK_TO_PREVIOUS_MEDIA_ITEM
 import androidx.media3.common.Player.REPEAT_MODE_OFF
 import androidx.media3.common.Player.STATE_ENDED
 import androidx.media3.common.Timeline
-import com.metrolist.music.db.MusicDatabase
-import com.metrolist.music.extensions.currentMetadata
-import com.metrolist.music.extensions.getCurrentQueueIndex
-import com.metrolist.music.extensions.getQueueWindows
-import com.metrolist.music.extensions.metadata
-import com.metrolist.music.playback.MusicService.MusicBinder
-import com.metrolist.music.playback.queues.Queue
-import com.metrolist.music.utils.reportException
+import com.soundify.music.db.MusicDatabase
+import com.soundify.music.extensions.currentMetadata
+import com.soundify.music.extensions.getCurrentQueueIndex
+import com.soundify.music.extensions.getQueueWindows
+import com.soundify.music.extensions.metadata
+import com.soundify.music.playback.MusicService.MusicBinder
+import com.soundify.music.playback.queues.Queue
+import com.soundify.music.utils.reportException
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableStateFlow
