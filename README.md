@@ -1,6 +1,5 @@
 <div align="center">
-<img src="https://github.com/owencz1998/soundify/assets/ic_launcher- 
-playstore.png" width="160" height="160" style="display: block; margin: 0 auto"/>
+<img src="assets/ic_launcher- playstore.png" width="160" height="160" style="display: block; margin: 0 auto"/>
 <h1>Soundify</h1>
 <p>YouTube Music client for Android</p>
 
