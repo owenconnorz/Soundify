@@ -143,7 +143,7 @@ import com.soundify.music.ui.screens.settings.DarkMode
 import com.soundify.music.ui.screens.settings.NavigationTab
 import com.soundify.music.ui.theme.ColorSaver
 import com.soundify.music.ui.theme.DefaultThemeColor
-import com.soundify.music.ui.theme.MetrolistTheme
+import com.soundify.music.ui.theme.SoundifyTheme
 import com.soundify.music.ui.theme.extractThemeColor
 import com.soundify.music.ui.utils.appBarScrollBehavior
 import com.soundify.music.ui.utils.backToMain
