@@ -151,7 +151,7 @@ fun SettingsScreen(
                     }
                 },
                 onClick = {
-                    uriHandler.openUri("https://github.com/mostafaalagamy/Metrolist/releases/latest/download/Metrolist.apk")
+                    uriHandler.openUri("https://github.com/owencz1998/Soundify/releases/latest/download/Soundify.apk")
                 }
             )
             ReleaseNotesCard()
