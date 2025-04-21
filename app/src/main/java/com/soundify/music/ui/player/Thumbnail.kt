@@ -44,7 +44,7 @@ import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import com.soundify.music.LocalPlayerConnection
 import com.soundify.music.R
-import com.metrolist.music.constants.PlayerHorizontalPadding
+import com.soundify.music.constants.PlayerHorizontalPadding
 import com.soundify.music.constants.ShowLyricsKey
 import com.soundify.music.constants.SwipeThumbnailKey
 import com.soundify.music.constants.ThumbnailCornerRadius
