@@ -168,13 +168,13 @@ class MusicService :
     private val audioQuality by enumPreference(
         this,
         AudioQualityKey,
-        com.metrolist.music.constants.AudioQuality.AUTO
+        com.soundify.music.constants.AudioQuality.AUTO
     )
 
     private var currentQueue: Queue = EmptyQueue
     var queueTitle: String? = null
 
-    val currentMediaMetadata = MutableStateFlow<com.metrolist.music.models.MediaMetadata?>(null)
+    val currentMediaMetadata = MutableStateFlow<com.soundify.music.models.MediaMetadata?>(null)
     private val currentSong =
         currentMediaMetadata
             .flatMapLatest { mediaMetadata ->
