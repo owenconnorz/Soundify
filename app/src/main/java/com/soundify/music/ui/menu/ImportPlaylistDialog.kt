@@ -11,7 +11,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.TextFieldValue
-import com.metrolist.music.LocalDatabase
+import com.soundify.music.LocalDatabase
 import com.soundify.music.R
 import com.soundify.music.db.entities.PlaylistEntity
 import com.soundify.music.ui.component.TextFieldDialog
