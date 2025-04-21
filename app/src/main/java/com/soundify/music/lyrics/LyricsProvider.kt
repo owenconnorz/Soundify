@@ -1,4 +1,4 @@
-package com.soundif.music.lyrics
+package com.soundify.music.lyrics
 
 import android.content.Context
 
