@@ -4,7 +4,7 @@ import android.content.Context
 import com.soundify.lrclib.LrcLib
 import com.soundify.music.constants.EnableLrcLibKey
 import com.soundify.music.utils.dataStore
-import com.metrolist.music.utils.get
+import com.soundify.music.utils.get
 
 object LrcLibLyricsProvider : LyricsProvider {
     override val name = "LrcLib"
