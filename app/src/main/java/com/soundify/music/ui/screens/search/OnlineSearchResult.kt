@@ -36,8 +36,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.soundify.innertube.YouTube.SearchFilter.Companion.FILTER_ALBUM
-import com.metrolist.innertube.YouTube.SearchFilter.Companion.FILTER_ARTIST
-import com.metrolist.innertube.YouTube.SearchFilter.Companion.FILTER_COMMUNITY_PLAYLIST
+import com.soundify.innertube.YouTube.SearchFilter.Companion.FILTER_ARTIST
+import com.soundify.innertube.YouTube.SearchFilter.Companion.FILTER_COMMUNITY_PLAYLIST
 import com.soundify.innertube.YouTube.SearchFilter.Companion.FILTER_FEATURED_PLAYLIST
 import com.soundify.innertube.YouTube.SearchFilter.Companion.FILTER_SONG
 import com.soundify.innertube.YouTube.SearchFilter.Companion.FILTER_VIDEO
