@@ -1,7 +1,7 @@
-package com.metrolist.music.lyrics
+package com.soundify.music.lyrics
 
 import android.text.format.DateUtils
-import com.metrolist.music.ui.component.ANIMATE_SCROLL_DURATION
+import com.soundif.music.ui.component.ANIMATE_SCROLL_DURATION
 
 @Suppress("RegExpRedundantEscape")
 object LyricsUtils {
