@@ -10,7 +10,7 @@ import com.soundify.innertube.models.filterExplicit
 import com.soundify.music.constants.HideExplicitKey
 import com.soundify.music.models.ItemsPage
 import com.soundify.music.utils.dataStore
-import com.metrolist.music.utils.get
+import com.soundify.music.utils.get
 import com.soundify.music.utils.reportException
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
