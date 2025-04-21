@@ -57,7 +57,7 @@ import com.soundify.music.LocalDatabase
 import com.soundify.music.LocalDownloadUtil
 import com.soundify.music.LocalPlayerConnection
 import com.soundify.music.LocalSyncUtils
-import com.metrolist.music.R
+import com.soundify.music.R
 import com.soundify.music.constants.ListItemHeight
 import com.soundify.music.constants.ListThumbnailSize
 import com.soundify.music.constants.ThumbnailCornerRadius
