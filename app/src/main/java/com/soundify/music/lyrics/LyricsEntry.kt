@@ -1,4 +1,4 @@
-package com.metrolist.music.lyrics
+package com.soundify.music.lyrics
 
 data class LyricsEntry(
     val time: Long,
