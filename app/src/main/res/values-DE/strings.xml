@@ -350,7 +350,7 @@
     <string name="hide_explicit">Explizite Inhalte ausblenden</string>
 
     <string name="discord_integration">Discord-Integration</string>
-    <string name="discord_information">Metrolist verwendet die KizzyRPC-Bibliothek, um den Status deines Discord-Accounts festzulegen. Dazu wird die Discord Gateway-Verbindung genutzt, was möglicherweise als Verstoß gegen die Discord-Nutzungsbedingungen angesehen wird. Es sind jedoch keine Fälle bekannt, in denen Benutzerkonten aus diesem Grund gesperrt wurden. Nutzung auf eigenes Risiko.\n\nMetrolist extrahiert nur deinen Token, alle anderen Daten werden lokal gespeichert.</string>
+    <string name="discord_information">Soundify verwendet die KizzyRPC-Bibliothek, um den Status deines Discord-Accounts festzulegen. Dazu wird die Discord Gateway-Verbindung genutzt, was möglicherweise als Verstoß gegen die Discord-Nutzungsbedingungen angesehen wird. Es sind jedoch keine Fälle bekannt, in denen Benutzerkonten aus diesem Grund gesperrt wurden. Nutzung auf eigenes Risiko.\n\nMetrolist extrahiert nur deinen Token, alle anderen Daten werden lokal gespeichert.</string>
     <string name="dismiss">Schließen</string>
     <string name="options">Optionen</string>
     <string name="preview">Vorschau</string>
