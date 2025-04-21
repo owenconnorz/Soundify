@@ -1,14 +1,14 @@
-package com.metrolist.music.lyrics
+package com.soundify.music.lyrics
 
 import android.content.Context
 import android.util.LruCache
-import com.metrolist.music.constants.PreferredLyricsProvider
-import com.metrolist.music.constants.PreferredLyricsProviderKey
-import com.metrolist.music.db.entities.LyricsEntity.Companion.LYRICS_NOT_FOUND
-import com.metrolist.music.extensions.toEnum
-import com.metrolist.music.models.MediaMetadata
-import com.metrolist.music.utils.dataStore
-import com.metrolist.music.utils.reportException
+import com.soundify.music.constants.PreferredLyricsProvider
+import com.soundify.music.constants.PreferredLyricsProviderKey
+import com.soundify.music.db.entities.LyricsEntity.Companion.LYRICS_NOT_FOUND
+import com.soundify.music.extensions.toEnum
+import com.soundify.music.models.MediaMetadata
+import com.soundify.music.utils.dataStore
+import com.soundify.music.utils.reportException
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.map
