@@ -1,4 +1,4 @@
-package com.soundify.music.ui.component.shimmer
+package com.soundify.ui.component.shimmer
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Spacer
