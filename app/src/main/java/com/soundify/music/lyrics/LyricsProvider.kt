@@ -1,4 +1,4 @@
-package com.metrolist.music.lyrics
+package com.soundif.music.lyrics
 
 import android.content.Context
 
