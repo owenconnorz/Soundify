@@ -1,9 +1,9 @@
-package com.metrolist.music.lyrics
+package com.soundify.music.lyrics
 
 import android.content.Context
-import com.metrolist.lrclib.LrcLib
-import com.metrolist.music.constants.EnableLrcLibKey
-import com.metrolist.music.utils.dataStore
+import com.soundify.lrclib.LrcLib
+import com.soundify.music.constants.EnableLrcLibKey
+import com.soundify.music.utils.dataStore
 import com.metrolist.music.utils.get
 
 object LrcLibLyricsProvider : LyricsProvider {
