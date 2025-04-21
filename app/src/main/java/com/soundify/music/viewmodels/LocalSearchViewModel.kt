@@ -1,13 +1,13 @@
-package com.metrolist.music.viewmodels
+package com.soundify.music.viewmodels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.metrolist.music.db.MusicDatabase
-import com.metrolist.music.db.entities.Album
-import com.metrolist.music.db.entities.Artist
-import com.metrolist.music.db.entities.LocalItem
-import com.metrolist.music.db.entities.Playlist
-import com.metrolist.music.db.entities.Song
+import com.soundify.music.db.MusicDatabase
+import com.soundify.music.db.entities.Album
+import com.soundify.music.db.entities.Artist
+import com.soundify.music.db.entities.LocalItem
+import com.soundify.music.db.entities.Playlist
+import com.soundify.music.db.entities.Song
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableStateFlow
