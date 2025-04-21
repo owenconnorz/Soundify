@@ -42,7 +42,7 @@ import com.soundify.innertube.YouTube
 import com.soundify.music.LocalDatabase
 import com.soundify.music.LocalDownloadUtil
 import com.soundify.music.LocalPlayerConnection
-import com.metrolist.music.R
+import com.soundify.music.R
 import com.soundify.music.db.entities.Playlist
 import com.soundify.music.db.entities.PlaylistSong
 import com.soundify.music.db.entities.Song
