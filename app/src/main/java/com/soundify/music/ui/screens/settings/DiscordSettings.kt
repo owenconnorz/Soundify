@@ -1,4 +1,4 @@
-package com.metrolist.music.ui.screens.settings
+package com.soundify.music.ui.screens.settings
 
 import android.content.Intent
 import android.net.Uri
@@ -51,21 +51,21 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import coil.compose.AsyncImage
-import com.metrolist.music.LocalPlayerAwareWindowInsets
-import com.metrolist.music.LocalPlayerConnection
-import com.metrolist.music.R
-import com.metrolist.music.constants.DiscordInfoDismissedKey
-import com.metrolist.music.constants.DiscordNameKey
-import com.metrolist.music.constants.DiscordTokenKey
-import com.metrolist.music.constants.DiscordUsernameKey
-import com.metrolist.music.constants.EnableDiscordRPCKey
-import com.metrolist.music.db.entities.Song
-import com.metrolist.music.ui.component.IconButton
-import com.metrolist.music.ui.component.PreferenceEntry
-import com.metrolist.music.ui.component.PreferenceGroupTitle
-import com.metrolist.music.ui.component.SwitchPreference
-import com.metrolist.music.ui.utils.backToMain
-import com.metrolist.music.utils.rememberPreference
+import com.soundify.music.LocalPlayerAwareWindowInsets
+import com.soundify.music.LocalPlayerConnection
+import com.soundify.music.R
+import com.soundify.music.constants.DiscordInfoDismissedKey
+import com.soundify.music.constants.DiscordNameKey
+import com.soundify.music.constants.DiscordTokenKey
+import com.soundify.music.constants.DiscordUsernameKey
+import com.soundify.music.constants.EnableDiscordRPCKey
+import com.soundify.music.db.entities.Song
+import com.soundify.music.ui.component.IconButton
+import com.soundify.music.ui.component.PreferenceEntry
+import com.soundify.music.ui.component.PreferenceGroupTitle
+import com.soundify.music.ui.component.SwitchPreference
+import com.soundify.music.ui.utils.backToMain
+import com.soundify.music.utils.rememberPreference
 import com.my.kizzy.rpc.KizzyRPC
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -365,13 +365,13 @@ fun RichPresence(song: Song?) {
                 onClick = {
                     val intent = Intent(
                         Intent.ACTION_VIEW,
-                        Uri.parse("https://github.com/mostafaalagamy/Metrolist")
+                        Uri.parse("https://github.com/owencz1998/Soundify")
                     )
                     context.startActivity(intent)
                 },
                 modifier = Modifier.fillMaxWidth(),
             ) {
-                Text("Visit Metrolist")
+                Text("Visit Soundify")
             }
         }
     }
