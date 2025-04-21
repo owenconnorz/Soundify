@@ -13,7 +13,7 @@ object Updater {
     suspend fun getLatestVersionName(): Result<String> =
         runCatching {
             val response =
-                client.get("https://api.github.com/repos/mostafaalagamy/Metrolist/releases/latest")
+                client.get("https://api.github.com/repos/owencz1998/Soundify/releases/latest")
                     .bodyAsText()
             val json = JSONObject(response)
             val versionName = json.getString("name")
