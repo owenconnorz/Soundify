@@ -23,7 +23,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import com.soundify.innertube.utils.parseCookieString
 import com.soundify.music.LocalDatabase
-import com.metrolist.music.R
+import com.soundify.music.R
 import com.soundify.music.constants.InnerTubeCookieKey
 import com.soundify.music.constants.ListThumbnailSize
 import com.soundify.music.db.entities.Playlist
