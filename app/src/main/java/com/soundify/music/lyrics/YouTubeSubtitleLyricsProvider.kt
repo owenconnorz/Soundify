@@ -1,7 +1,7 @@
-package com.metrolist.music.lyrics
+package com.soundify.music.lyrics
 
 import android.content.Context
-import com.metrolist.innertube.YouTube
+import com.soundify.innertube.YouTube
 
 object YouTubeSubtitleLyricsProvider : LyricsProvider {
     override val name = "YouTube Subtitle"
