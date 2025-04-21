@@ -1,9 +1,9 @@
-package com.metrolist.kugou
+package com.soundify.kugou
 
-import com.metrolist.kugou.models.DownloadLyricsResponse
-import com.metrolist.kugou.models.Keyword
-import com.metrolist.kugou.models.SearchLyricsResponse
-import com.metrolist.kugou.models.SearchSongResponse
+import com.soundify.kugou.models.DownloadLyricsResponse
+import com.soundify.kugou.models.Keyword
+import com.soundify.kugou.models.SearchLyricsResponse
+import com.soundify.kugou.models.SearchSongResponse
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.plugins.compression.ContentEncoding
