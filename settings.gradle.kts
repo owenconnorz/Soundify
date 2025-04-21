@@ -14,7 +14,7 @@ plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version("0.9.0")
 }
 
-rootProject.name = "Metrolist"
+rootProject.name = "Soundify"
 include(":app")
 include(":innertube")
 include(":kugou")
