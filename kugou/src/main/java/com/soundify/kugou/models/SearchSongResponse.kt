@@ -1,4 +1,4 @@
-package com.metrolist.kugou.models
+package com.soundify.kugou.models
 
 import kotlinx.serialization.Serializable
 
