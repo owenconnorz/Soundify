@@ -312,7 +312,7 @@ class MainActivity : ComponentActivity() {
                 }
             }
 
-            MetrolistTheme(
+            SoundifyTheme(
                 darkTheme = useDarkTheme,
                 pureBlack = pureBlack,
                 themeColor = themeColor,
@@ -1106,9 +1106,9 @@ class MainActivity : ComponentActivity() {
     }
 
     companion object {
-        const val ACTION_SEARCH = "com.metrolist.music.action.SEARCH"
-        const val ACTION_EXPLORE = "com.metrolist.music.action.EXPLORE"
-        const val ACTION_LIBRARY = "com.metrolist.music.action.LIBRARY"
+        const val ACTION_SEARCH = "com.soundify.music.action.SEARCH"
+        const val ACTION_EXPLORE = "com.soundify.music.action.EXPLORE"
+        const val ACTION_LIBRARY = "com.soundify.music.action.LIBRARY"
     }
 }
 
