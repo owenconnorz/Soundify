@@ -28,36 +28,32 @@ android {
     productFlavors {
         create("universal") {
             dimension = "abi"
-            ndk {
-                abiFilters += listOf("armeabi-v7a", "arm64-v8a", "x86", "x86_64")
-            }
+            ndk.abiFilters += listOf("armeabi-v7a", "arm64-v8a", "x86", "x86_64")
             buildConfigField("String", "ARCHITECTURE", "\"universal\"")
         }
         create("arm64") {
             dimension = "abi"
-            ndk { abiFilters += "arm64-v8a" }
+            ndk.abiFilters += "arm64-v8a"
             buildConfigField("String", "ARCHITECTURE", "\"arm64\"")
         }
         create("armeabi") {
             dimension = "abi"
-            ndk { abiFilters += "armeabi-v7a" }
+            ndk.abiFilters += "armeabi-v7a"
             buildConfigField("String", "ARCHITECTURE", "\"armeabi\"")
         }
         create("x86") {
             dimension = "abi"
-            ndk { abiFilters += "x86" }
+            ndk.abiFilters += "x86"
             buildConfigField("String", "ARCHITECTURE", "\"x86\"")
         }
         create("x86_64") {
             dimension = "abi"
-            ndk { abiFilters += "x86_64" }
+            ndk.abiFilters += "x86_64"
             buildConfigField("String", "ARCHITECTURE", "\"x86_64\"")
         }
     }
 
-    // Signing configs are not used to allow unsigned builds
     signingConfigs {
-        // Define this only if you want to manually sign later
         create("release") {
             storeFile = file("keystore/release.keystore")
             storePassword = System.getenv("STORE_PASSWORD")
@@ -74,12 +70,11 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            // signingConfig = signingConfigs.getByName("release") // disabled to build unsigned APK
+            // signingConfig intentionally omitted for unsigned builds
         }
         debug {
             applicationIdSuffix = ".debug"
             isDebuggable = true
-            // No custom signing config — will use default debug.keystore
         }
     }
 
@@ -95,7 +90,7 @@ android {
 
     kotlinOptions {
         jvmTarget = "21"
-        freeCompilerArgs += listOf("-Xcontext-receivers")
+        freeCompilerArgs += "-Xcontext-receivers"
     }
 
     buildFeatures {
@@ -109,19 +104,15 @@ android {
     }
 
     lint {
-        disable += "MissingTranslation"
-        disable += "MissingQuantity"
-        disable += "ImpliedQuantity"
+        disable += listOf("MissingTranslation", "MissingQuantity", "ImpliedQuantity")
     }
 
     androidResources {
         generateLocaleConfig = true
     }
 
-    packaging {
-        resources {
-            excludes += "/META-INF/{AL2.0,LGPL2.1}"
-        }
+    packaging.resources {
+        excludes += "/META-INF/{AL2.0,LGPL2.1}"
     }
 }
 
@@ -130,15 +121,19 @@ ksp {
 }
 
 dependencies {
+    // Kotlin & core
     implementation(libs.guava)
     implementation(libs.coroutines.guava)
     implementation(libs.concurrent.futures)
+    coreLibraryDesugaring(libs.desugaring)
 
+    // Jetpack
     implementation(libs.activity)
     implementation(libs.navigation)
     implementation(libs.hilt.navigation)
     implementation(libs.datastore)
 
+    // Compose
     implementation(libs.compose.runtime)
     implementation(libs.compose.foundation)
     implementation(libs.compose.ui)
@@ -146,41 +141,43 @@ dependencies {
     implementation(libs.compose.ui.tooling)
     implementation(libs.compose.animation)
     implementation(libs.compose.reorderable)
+    implementation(libs.material3)
 
+    // ViewModel
     implementation(libs.viewmodel)
     implementation(libs.viewmodel.compose)
 
-    implementation(libs.material3)
+    // Media & visuals
     implementation(libs.palette)
-    implementation(projects.materialColorUtilities)
-
     implementation(libs.coil)
     implementation(libs.shimmer)
-
     implementation(libs.media3)
     implementation(libs.media3.session)
     implementation(libs.media3.okhttp)
     implementation(libs.squigglyslider)
 
+    // Room
     implementation(libs.room.runtime)
-    ksp(libs.room.compiler)
     implementation(libs.room.ktx)
+    ksp(libs.room.compiler)
 
-    implementation(libs.apache.lang3)
-
+    // Hilt
     implementation(libs.hilt)
-    implementation("org.jsoup:jsoup:1.18.1")
     kapt(libs.hilt.compiler)
 
+    // Misc
+    implementation("org.jsoup:jsoup:1.18.1")
+    implementation(libs.apache.lang3)
+    implementation(libs.timber)
+
+    // Projects
+    implementation(projects.materialColorUtilities)
     implementation(projects.innertube)
     implementation(projects.kugou)
     implementation(projects.lrclib)
     implementation(projects.kizzy)
 
+    // Networking
     implementation(libs.ktor.client.core)
     implementation(libs.ktor.serialization.json)
-
-    coreLibraryDesugaring(libs.desugaring)
-
-    implementation(libs.timber)
 }
