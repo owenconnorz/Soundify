@@ -2,7 +2,7 @@
 
 plugins {
     id("com.android.application")
-    kotlin("android")
+    kotlin("android") version "1.9.23"
     kotlin("kapt")
     alias(libs.plugins.hilt)
     alias(libs.plugins.kotlin.ksp)
@@ -55,8 +55,9 @@ android {
         }
     }
 
+    // Signing configs are not used to allow unsigned builds
     signingConfigs {
-        // Optional signing config for release if you want to sign manually
+        // Define this only if you want to manually sign later
         create("release") {
             storeFile = file("keystore/release.keystore")
             storePassword = System.getenv("STORE_PASSWORD")
@@ -73,12 +74,12 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            // signingConfig = signingConfigs.getByName("release") // Commented out to skip signing
+            // signingConfig = signingConfigs.getByName("release") // disabled to build unsigned APK
         }
         debug {
             applicationIdSuffix = ".debug"
             isDebuggable = true
-            // Uses default debug keystore, no need to define signingConfig
+            // No custom signing config — will use default debug.keystore
         }
     }
 
@@ -94,7 +95,7 @@ android {
 
     kotlinOptions {
         jvmTarget = "21"
-        freeCompilerArgs = freeCompilerArgs + "-Xcontext-receivers"
+        freeCompilerArgs += listOf("-Xcontext-receivers")
     }
 
     buildFeatures {
@@ -154,7 +155,6 @@ dependencies {
     implementation(projects.materialColorUtilities)
 
     implementation(libs.coil)
-
     implementation(libs.shimmer)
 
     implementation(libs.media3)
@@ -178,10 +178,9 @@ dependencies {
     implementation(projects.kizzy)
 
     implementation(libs.ktor.client.core)
+    implementation(libs.ktor.serialization.json)
 
     coreLibraryDesugaring(libs.desugaring)
 
     implementation(libs.timber)
-
-    implementation(libs.ktor.serialization.json)
 }
