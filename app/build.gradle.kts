@@ -1,13 +1,48 @@
 @file:Suppress("UnstableApiUsage")
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+
+    repositories {
+        google()
+        mavenCentral()
+        maven { setUrl("https://jitpack.io") }
+    }
+}
 
 plugins {
     id("com.android.application")
-    kotlin("android") version "1.9.23"
+    kotlin("android") // No version specified, let Gradle resolve the plugin version automatically
     kotlin("kapt")
     alias(libs.plugins.hilt)
     alias(libs.plugins.kotlin.ksp)
     alias(libs.plugins.compose.compiler)
+    id("org.gradle.toolchains.foojay-resolver-convention") version "0.9.0"
 }
+
+rootProject.name = "Soundify"
+include(":app")
+include(":innertube")
+include(":kugou")
+include(":lrclib")
+include(":kizzy")
+include(":material-color-utilities")
+
+// Use a local copy of NewPipe Extractor by uncommenting the lines below.
+// We assume, that Soundify and NewPipe Extractor have the same parent directory.
+// If this is not the case, please change the path in includeBuild().
+//
+// For this to work you also need to change the implementation in innertube/build.gradle.kts
+// to one which does not specify a version.
+// From:
+//      implementation(libs.newpipe.extractor)
+// To:
+//      implementation("com.github.teamnewpipe:NewPipeExtractor")
+//includeBuild("../NewPipeExtractor") {
+//    dependencySubstitution {
+//        substitute(module("com.github.teamnewpipe:NewPipeExtractor")).using(project(":extractor"))
+//    }
+//}
 
 android {
     namespace = "com.soundify.music"
@@ -28,27 +63,29 @@ android {
     productFlavors {
         create("universal") {
             dimension = "abi"
-            ndk.abiFilters += listOf("armeabi-v7a", "arm64-v8a", "x86", "x86_64")
+            ndk {
+                abiFilters += listOf("armeabi-v7a", "arm64-v8a", "x86", "x86_64")
+            }
             buildConfigField("String", "ARCHITECTURE", "\"universal\"")
         }
         create("arm64") {
             dimension = "abi"
-            ndk.abiFilters += "arm64-v8a"
+            ndk { abiFilters += "arm64-v8a" }
             buildConfigField("String", "ARCHITECTURE", "\"arm64\"")
         }
         create("armeabi") {
             dimension = "abi"
-            ndk.abiFilters += "armeabi-v7a"
+            ndk { abiFilters += "armeabi-v7a" }
             buildConfigField("String", "ARCHITECTURE", "\"armeabi\"")
         }
         create("x86") {
             dimension = "abi"
-            ndk.abiFilters += "x86"
+            ndk { abiFilters += "x86" }
             buildConfigField("String", "ARCHITECTURE", "\"x86\"")
         }
         create("x86_64") {
             dimension = "abi"
-            ndk.abiFilters += "x86_64"
+            ndk { abiFilters += "x86_64" }
             buildConfigField("String", "ARCHITECTURE", "\"x86_64\"")
         }
     }
@@ -70,7 +107,6 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            // signingConfig intentionally omitted for unsigned builds
         }
         debug {
             applicationIdSuffix = ".debug"
@@ -90,7 +126,7 @@ android {
 
     kotlinOptions {
         jvmTarget = "21"
-        freeCompilerArgs += "-Xcontext-receivers"
+        freeCompilerArgs += listOf("-Xcontext-receivers")
     }
 
     buildFeatures {
@@ -104,15 +140,19 @@ android {
     }
 
     lint {
-        disable += listOf("MissingTranslation", "MissingQuantity", "ImpliedQuantity")
+        disable += "MissingTranslation"
+        disable += "MissingQuantity"
+        disable += "ImpliedQuantity"
     }
 
     androidResources {
         generateLocaleConfig = true
     }
 
-    packaging.resources {
-        excludes += "/META-INF/{AL2.0,LGPL2.1}"
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
     }
 }
 
@@ -121,19 +161,15 @@ ksp {
 }
 
 dependencies {
-    // Kotlin & core
     implementation(libs.guava)
     implementation(libs.coroutines.guava)
     implementation(libs.concurrent.futures)
-    coreLibraryDesugaring(libs.desugaring)
 
-    // Jetpack
     implementation(libs.activity)
     implementation(libs.navigation)
     implementation(libs.hilt.navigation)
     implementation(libs.datastore)
 
-    // Compose
     implementation(libs.compose.runtime)
     implementation(libs.compose.foundation)
     implementation(libs.compose.ui)
@@ -141,43 +177,41 @@ dependencies {
     implementation(libs.compose.ui.tooling)
     implementation(libs.compose.animation)
     implementation(libs.compose.reorderable)
-    implementation(libs.material3)
 
-    // ViewModel
     implementation(libs.viewmodel)
     implementation(libs.viewmodel.compose)
 
-    // Media & visuals
+    implementation(libs.material3)
     implementation(libs.palette)
+    implementation(projects.materialColorUtilities)
+
     implementation(libs.coil)
     implementation(libs.shimmer)
+
     implementation(libs.media3)
     implementation(libs.media3.session)
     implementation(libs.media3.okhttp)
     implementation(libs.squigglyslider)
 
-    // Room
     implementation(libs.room.runtime)
-    implementation(libs.room.ktx)
     ksp(libs.room.compiler)
+    implementation(libs.room.ktx)
 
-    // Hilt
+    implementation(libs.apache.lang3)
+
     implementation(libs.hilt)
+    implementation("org.jsoup:jsoup:1.18.1")
     kapt(libs.hilt.compiler)
 
-    // Misc
-    implementation("org.jsoup:jsoup:1.18.1")
-    implementation(libs.apache.lang3)
-    implementation(libs.timber)
-
-    // Projects
-    implementation(projects.materialColorUtilities)
     implementation(projects.innertube)
     implementation(projects.kugou)
     implementation(projects.lrclib)
     implementation(projects.kizzy)
 
-    // Networking
     implementation(libs.ktor.client.core)
     implementation(libs.ktor.serialization.json)
+
+    coreLibraryDesugaring(libs.desugaring)
+
+    implementation(libs.timber)
 }
