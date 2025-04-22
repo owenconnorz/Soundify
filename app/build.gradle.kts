@@ -2,8 +2,8 @@
 
 plugins {
     id("com.android.application")
-    kotlin("android") version "1.9.23"
-    kotlin("kapt")
+    id("org.jetbrains.kotlin.android") version "1.9.23" // Apply Kotlin plugin here
+    id("kotlin.kapt")
     alias(libs.plugins.hilt)
     alias(libs.plugins.kotlin.ksp)
     alias(libs.plugins.compose.compiler)
@@ -56,7 +56,6 @@ android {
     }
 
     signingConfigs {
-        // Define this only if you want to manually sign later
         create("release") {
             storeFile = file("keystore/release.keystore")
             storePassword = System.getenv("STORE_PASSWORD")
