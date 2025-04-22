@@ -51,10 +51,13 @@ jobs:
         env:
           PULL_REQUEST: 'false'
 
+      - name: Debug APK Output
+        run: find app/build/outputs/apk/ -type f
+
       - name: Move APK
         run: |
           mkdir -p app/build/outputs/apk/${{ matrix.abi }}/release/out
-          find app/build/outputs/apk/${{ matrix.abi }}/release/ -name "*.apk" | xargs -I{} mv {} app/build/outputs/apk/${{ matrix.abi }}/release/out/app-${{ matrix.abi }}-release.apk
+          find app/build/outputs/apk/ -name "*${{ matrix.abi }}*.apk" | head -n 1 | xargs -I{} mv {} app/build/outputs/apk/${{ matrix.abi }}/release/out/app-${{ matrix.abi }}-release.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
@@ -91,6 +94,9 @@ jobs:
           for i in {1..3}; do ./gradlew assembleUniversalDebug && break || sleep 10; done
         env:
           PULL_REQUEST: 'false'
+
+      - name: Debug APK Output
+        run: find app/build/outputs/apk/ -type f
 
       - name: Upload Debug APK
         uses: actions/upload-artifact@v4
