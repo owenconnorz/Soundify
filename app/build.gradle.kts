@@ -56,23 +56,12 @@ android {
     }
 
     signingConfigs {
-        create("persistentDebug") {
-            storeFile = file("persistent-debug.keystore")
-            storePassword = "android"
-            keyAlias = "androiddebugkey"
-            keyPassword = "android"
-        }
+        // Optional signing config for release if you want to sign manually
         create("release") {
             storeFile = file("keystore/release.keystore")
             storePassword = System.getenv("STORE_PASSWORD")
             keyAlias = System.getenv("KEY_ALIAS")
             keyPassword = System.getenv("KEY_PASSWORD")
-        }
-        getByName("debug") {
-            keyAlias = "androiddebugkey"
-            keyPassword = "android"
-            storePassword = "android"
-            storeFile = file("${System.getProperty("user.home")}/.android/debug.keystore")
         }
     }
 
@@ -84,11 +73,12 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            // signingConfig = signingConfigs.getByName("release") // Commented out to skip signing
         }
         debug {
             applicationIdSuffix = ".debug"
             isDebuggable = true
-            signingConfig = signingConfigs.getByName("persistentDebug")
+            // Uses default debug keystore, no need to define signingConfig
         }
     }
 
@@ -108,9 +98,9 @@ android {
     }
 
     buildFeatures {
-         compose = true
-         buildConfig = true
-     }
+        compose = true
+        buildConfig = true
+    }
 
     dependenciesInfo {
         includeInApk = false
@@ -128,10 +118,10 @@ android {
     }
 
     packaging {
-         resources {
-             excludes += "/META-INF/{AL2.0,LGPL2.1}"
-         }
-     }
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
+    }
 }
 
 ksp {
