@@ -3,6 +3,8 @@
 <h1>Soundify</h1>
 <p>YouTube Music client for Android</p>
 
+WILL DO KEYSTORE WHEN HAVE TIME
+
 <h1>Screenshots</h1>
 
   <img src="https://github.com/mostafaalagamy/Metrolist/blob/main/fastlane/metadata/android/en-US/images/screenshots/screenshot_1.png" width="30%" />
